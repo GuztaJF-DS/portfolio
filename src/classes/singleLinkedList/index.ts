@@ -1,7 +1,7 @@
 import { Node } from '@/classes/node';
 
 export class SingleLinkedList{
-  head: Node | null = null;
+  head: any;
   constructor(){
     this.head=null
   }
@@ -33,5 +33,9 @@ export class SingleLinkedList{
     }
     lastNode.next=newNode;
     return;
+  }
+
+  next(){
+    this.head=this.head.next;
   }
 }
