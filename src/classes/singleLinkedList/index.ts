@@ -9,7 +9,7 @@ export class SingleLinkedList{
   }
 
   push(val:number){
-    let newNode = new Node(val);
+    let newNode = new Node(val, this.length+1);
 
     if(!this.head){
       this.head = newNode;
@@ -24,7 +24,7 @@ export class SingleLinkedList{
   }
 
   unshift(val:number){
-    let newNode = new Node(val);
+    let newNode = new Node(val,1);
 
     this.length += 1;
     if(!this.head){
@@ -33,14 +33,16 @@ export class SingleLinkedList{
     }
     let lastNode=this.head;
     while(lastNode.next!==null){
+      lastNode.position+=1;
       lastNode=lastNode.next;
     }
+    lastNode.position+=1;
     lastNode.next=newNode;
     return;
   }
 
-  addAtPosition(val:number){
-    let newNode = new Node(val);
+  addAtPosition(val:number, pos:number){
+    let newNode = new Node(val,pos);
 
     if(!this.head){
       this.head = newNode;
@@ -48,22 +50,19 @@ export class SingleLinkedList{
       return this;
     }
 
-    console.log(this);
     let lastNode=this.head;
-    console.log(lastNode)
-    while(lastNode.next.data!==4){
-      lastNode=lastNode.next;
-      if(lastNode===null){
-        return;
+    while(lastNode?.position!=pos){
+      if(lastNode.next===null){
+        break;
       }
+      lastNode.position+=1;
+      lastNode=lastNode.next;
     }
-    console.log('  ')
+    lastNode.position+=1;
     newNode.next=lastNode.next;
     lastNode.next=newNode
-    console.log('newNode',newNode)
-    console.log('lastNode',lastNode)
-    console.log('this.head',this.head)
     this.length += 1;
+
     return;
   }
 
