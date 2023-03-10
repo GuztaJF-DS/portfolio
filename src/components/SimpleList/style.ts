@@ -16,3 +16,8 @@ export const StyledButton = Styled.button`
   width: 200px;
   margin-top:10px;
 `
+
+export const StyledInput = Styled.input`
+  width: 200px;
+  margin-top:10px;
+`
