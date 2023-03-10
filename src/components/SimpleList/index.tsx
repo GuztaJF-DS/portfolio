@@ -14,7 +14,8 @@ export default function SimpleList() {
     while(copyList.head!==null){
       updatedList.unshift({
         data:copyList.head.data,
-        position:copyList.head.position
+        position:copyList.head.position,
+        selected: false
       });
       copyList.next();
     }
@@ -35,9 +36,21 @@ export default function SimpleList() {
 
   const AddAtPosition = () =>{
     const copyList = _.clone(list);
-    const num=Math.ceil(Math.random() * (copyList.length - 1) + 1)
-    copyList.addAtPosition(num,num);
+    copyList.addAtPosition(numberToAdd,Math.ceil(Math.random() * (copyList.length - 1) + 1));
     setList(copyList);
+  }
+
+  const UpdateSelectedItems = (index:number) => {
+    const updatedList=filteredList.map((list)=>{
+      if(list.position===index){
+        list.selected = !list.selected;
+      }
+      else{
+        list.selected = false;
+      }
+      return list
+    })
+    setFilteredList(updatedList);
   }
 
   return (
@@ -46,11 +59,14 @@ export default function SimpleList() {
         Simple Linked List
       </p>
       <SquareContainer>
-        {filteredList.map((i, index)=>{
+        {filteredList.map((i)=>{
           return (
             <Square 
-              onClick={()=>{console.log(i)}}
-              key={index}
+              onClick={()=>{
+                UpdateSelectedItems(i.position);
+              }}
+              selected={i?.selected}
+              key={i.position}
             >
               {i.data}
             </Square>
@@ -65,9 +81,8 @@ export default function SimpleList() {
       />
       <StyledButton onClick={AddList}>Add</StyledButton>
       <StyledButton onClick={UnshiftList}>Add at the start</StyledButton>
-      <StyledButton onClick={AddAtPosition}>Add At Position</StyledButton>
-      <StyledButton onClick={()=>{console.log(list)}}>check, debug</StyledButton>
-      <StyledInput placeholder='After which Number' onChange={(e)=>{console.log(e.target.value);}}/>
+      <StyledButton onClick={AddAtPosition}>Add At random Position</StyledButton>
+      <StyledButton onClick={()=>{console.log(list)}}>Log List - Debug</StyledButton>
     </main>
   );
 }
