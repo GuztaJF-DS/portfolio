@@ -19,7 +19,10 @@ export default function Home() {
           AnotherFlix
         </Link>
         <Link href={'https://spotifycloneui.netlify.app/'}>
-          Spotify Ui Clone - (not really planning on finishing this one)
+          Spotify Ui Clone - (Old project, not really planning on finishing this one)
+        </Link>
+        <Link href={'https://github.com/GuztaJF-DS'}>
+          My Github
         </Link>
       </main>
     </>
