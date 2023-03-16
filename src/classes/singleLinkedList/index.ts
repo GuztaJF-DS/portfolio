@@ -4,7 +4,7 @@ export class SingleLinkedList{
   head: any;
   length: number;
   constructor(){
-    this.head=null
+    this.head=null;
     this.length=0;
   }
 
@@ -60,7 +60,7 @@ export class SingleLinkedList{
     }
     lastNode.position+=1;
     newNode.next=lastNode.next;
-    lastNode.next=newNode
+    lastNode.next=newNode;
     this.length += 1;
 
     return;

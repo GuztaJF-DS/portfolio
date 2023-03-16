@@ -6,6 +6,7 @@ import { Square, SquareContainer, StyledButton, StyledInput } from './style';
 export default function SimpleList() {
   const [list,setList] = useState(new SingleLinkedList().push(1));
   const [filteredList, setFilteredList] = useState<any[]>([]);
+  const [selected, setSelected] = useState<any>();
   const [numberToAdd, setNumberToAdd] = useState<number>(0);
 
   useEffect(()=>{
@@ -36,13 +37,16 @@ export default function SimpleList() {
 
   const AddAtPosition = () =>{
     const copyList = _.clone(list);
-    copyList.addAtPosition(numberToAdd,Math.ceil(Math.random() * (copyList.length - 1) + 1));
+    const position = selected ? selected.position : Math.ceil(Math.random() * (copyList.length - 1) + 1);
+    copyList.addAtPosition(numberToAdd, position);
+    setSelected(undefined);
     setList(copyList);
   }
 
   const UpdateSelectedItems = (index:number) => {
     const updatedList=filteredList.map((list)=>{
       if(list.position===index){
+        setSelected(!list.selected ? list: undefined);
         list.selected = !list.selected;
       }
       else{
@@ -81,7 +85,7 @@ export default function SimpleList() {
       />
       <StyledButton onClick={AddList}>Add</StyledButton>
       <StyledButton onClick={UnshiftList}>Add at the start</StyledButton>
-      <StyledButton onClick={AddAtPosition}>Add At random Position</StyledButton>
+      <StyledButton onClick={AddAtPosition}>Add At {selected?.data || 'random'} Position</StyledButton>
       <StyledButton onClick={()=>{console.log(list)}}>Log List - Debug</StyledButton>
     </main>
   );

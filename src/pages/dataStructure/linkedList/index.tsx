@@ -4,11 +4,9 @@ import SimpleList from '@/components/SimpleList';
 
 export default function LinkedList() {
   return (
-    <>
-      <main>
+    <main>
       <BackButton />
       <SimpleList />
-      </main>
-    </>
+    </main>
   );
 }
