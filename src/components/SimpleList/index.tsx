@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import _ from 'lodash';
 import { SingleLinkedList } from '@/classes/singleLinkedList';
-import { Square, SquareContainer, StyledButton, StyledInput } from './style';
+import { 
+  Square,
+  SquareContainer,
+  StyledButton,
+  StyledInput,
+  Description
+} from './style';
 import { IFilteredList } from '@/Interfaces/SimpleList';
 
 export default function SimpleList() {
@@ -88,6 +94,13 @@ export default function SimpleList() {
       <StyledButton onClick={UnshiftList}>Add at the start</StyledButton>
       <StyledButton onClick={AddAtPosition}>Add At {selected?.data || 'random'} Position</StyledButton>
       <StyledButton onClick={()=>{console.log(list)}}>Log List - Debug</StyledButton>
+      <Description>
+        This is a Linked list, it&apos;s a common data structure, being a chain of nodes that connect
+        between themselves by a pointer, which references the next item in the list, or a null value.{'\n'}
+        a good example of a linked list is a list of songs being played in a music player.{'\n'}
+        this one here it&apos;s a simple one, it only references forward, and it ends on a null, here
+        we have some functions for you to test it.
+      </Description>
     </main>
   );
 }

@@ -28,3 +28,8 @@ export const StyledInput = Styled.input`
   width: 210px;
   margin-top:10px;
 `
+export const Description = Styled.p`
+  margin-top:20px;
+  white-space: pre-wrap;
+  max-width: 305px;
+`
