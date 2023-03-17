@@ -24,6 +24,9 @@ export default function Home() {
         <Link href={'https://github.com/GuztaJF-DS'}>
           My Github
         </Link>
+        <Link href={'https://leetcode.com/noobshippuden13/'}>
+          My LeetCode Profile
+        </Link>
       </main>
     </>
   );
