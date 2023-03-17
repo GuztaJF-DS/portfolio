@@ -1,6 +1,6 @@
 export class Node{
   data: number | null = null;
-  position?: number;
+  position: number;
   next: Node | null = null;
   constructor(num:number, pos?: number){
     this.data = num;

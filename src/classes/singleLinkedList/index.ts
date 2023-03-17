@@ -1,7 +1,7 @@
 import { Node } from '@/classes/node';
 
 export class SingleLinkedList{
-  head: any;
+  head: Node | null;
   length: number;
   constructor(){
     this.head=null;
@@ -67,6 +67,8 @@ export class SingleLinkedList{
   }
 
   next(){
-    this.head=this.head.next;
+    if(this.head){
+      this.head=this.head.next;
+    }
   }
 }

@@ -2,11 +2,12 @@ import React, { useState, useEffect } from 'react'
 import _ from 'lodash';
 import { SingleLinkedList } from '@/classes/singleLinkedList';
 import { Square, SquareContainer, StyledButton, StyledInput } from './style';
+import { IFilteredList } from '@/Interfaces/SimpleList';
 
 export default function SimpleList() {
   const [list,setList] = useState(new SingleLinkedList().push(1));
-  const [filteredList, setFilteredList] = useState<any[]>([]);
-  const [selected, setSelected] = useState<any>();
+  const [filteredList, setFilteredList] = useState<IFilteredList[]>([]);
+  const [selected, setSelected] = useState<IFilteredList>();
   const [numberToAdd, setNumberToAdd] = useState<number>(0);
 
   useEffect(()=>{
