@@ -50,20 +50,42 @@ export class SingleLinkedList{
       return this;
     }
 
-    let lastNode=this.head;
-    while(lastNode?.position!=pos){
-      if(lastNode.next===null){
+    let nodeCopy=this.head;
+    while(nodeCopy?.position!=pos){
+      if(nodeCopy.next===null){
         break;
       }
-      lastNode.position+=1;
-      lastNode=lastNode.next;
+      nodeCopy.position+=1;
+      nodeCopy=nodeCopy.next;
     }
-    lastNode.position+=1;
-    newNode.next=lastNode.next;
-    lastNode.next=newNode;
+    nodeCopy.position+=1;
+    newNode.next=nodeCopy.next;
+    nodeCopy.next=newNode;
     this.length += 1;
 
     return;
+  }
+
+  isPalindrome(){
+    let nodeCopy = this.head;
+    let stack = [];
+    let isPali = true;
+
+    while (nodeCopy !== null) {
+      stack.push(nodeCopy.data);
+      nodeCopy = nodeCopy.next;
+    }
+    while(this.head!==null){
+      const paliCheck = stack.pop();
+
+      if(this.head.data!=paliCheck){
+        isPali=false;
+        break;
+      }
+
+      this.head=this.head.next;
+    }
+    return isPali;
   }
 
   next(){

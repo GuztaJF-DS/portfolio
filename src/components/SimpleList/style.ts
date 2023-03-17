@@ -1,5 +1,15 @@
 import Styled, { css } from "styled-components";
 
+
+export const ContentContainer = Styled.div`
+  display: flex;
+  flex-direction:row;
+  >div{
+    display: flex;
+    flex-direction:column;
+  }
+`
+
 export const SquareContainer = Styled.div`
   display: flex;
   flex-direction: row;
