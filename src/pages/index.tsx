@@ -37,6 +37,9 @@ export default function Home() {
         <Link href={'https://spotifycloneui.netlify.app/'} className={"Link"}>
           Spotify Ui Clone - (Old project, not really planning on finishing this one)
         </Link>
+        <Link href={'https://api-requester.vercel.app/'} className={"Link"}>
+          Api Requester - (i{"'"}ve mainly did this one to show my own APIs, but you can use with any other)
+        </Link>
         <i>
           Links:
         </i>
