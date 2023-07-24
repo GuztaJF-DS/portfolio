@@ -4,12 +4,6 @@ export const MainContainer = Styled.main`
   margin: auto;
   max-width:1440px;
   width:100vw;
-  .Link {
-    margin-left:12px;
-  }
-  i {
-      margin-top:10px;
-  }
 `;
 
 export const AnimatedTitle = Styled.h1`
@@ -66,5 +60,20 @@ export const AnimatedSubTitle = Styled.h1`
   @media (min-width:1440px){
     font-size: 36px;
     --margin-width: 172.8px;
+  }
+`
+
+export const LinkContainer = Styled.div`
+  --linkColor: #d63131;
+  display:flex;
+  justify-content:space-evenly;
+  background-color:var(--linkColor);
+  width:75%;
+  height:23px;
+  margin-top:40vh;
+  .Link {
+    color:#fffbf4;
+    background-color:transparent;
+    transition:color 0.3s;
   }
 `
