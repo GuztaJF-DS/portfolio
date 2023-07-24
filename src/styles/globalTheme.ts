@@ -3,10 +3,10 @@ import { createGlobalStyle } from 'styled-components';
 export const Global = createGlobalStyle`
   * {
     margin: 0;
-    padding: 5px;
-    background-color: black;
-    color: white;
+    background-color: #fffbf4;
+    color: #292929;
     outline: 0;
+    font-family: 'Noto Sans', sans-serif;
     box-sizing: border-box;
   }
   html{
