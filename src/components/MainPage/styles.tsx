@@ -63,14 +63,18 @@ export const AnimatedSubTitle = Styled.h1`
   }
 `
 
-export const LinkContainer = Styled.div`
-  --linkColor: #d63131;
+interface LinkContainerProps {
+  currentColor: string;
+};
+
+export const LinkContainer = Styled.div<LinkContainerProps>`
   display:flex;
   justify-content:space-evenly;
-  background-color:var(--linkColor);
+  background-color:${(props) => props.currentColor};
   width:75%;
   height:23px;
   margin-top:40vh;
+  transition:background-color 0.25s;
   .Link {
     color:#fffbf4;
     background-color:transparent;
