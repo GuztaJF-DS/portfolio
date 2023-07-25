@@ -1,10 +1,8 @@
 import React from 'react'
-import MainPage from '../../components/MainPage';
+import StudiesPage from '@/components/StudiesPage';
 
 export default function Home() {
   return (
-    <>
-      Studies
-    </>
+    <StudiesPage/>
   );
 }

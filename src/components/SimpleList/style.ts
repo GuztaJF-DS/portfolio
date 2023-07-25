@@ -1,10 +1,15 @@
 import Styled, { css } from "styled-components";
 
-
 export const ContentContainer = Styled.div`
   display: flex;
   flex-direction:row;
-  >div{
+  > div{
+    display: flex;
+    flex-direction:column;
+  }
+  @media (max-width:510px){
+    align-items:center;
+    width: 100%;
     display: flex;
     flex-direction:column;
   }
@@ -40,6 +45,7 @@ export const StyledInput = Styled.input`
 `
 export const Description = Styled.p`
   margin-top:20px;
+  margin-left:20px;
   white-space: pre-wrap;
   max-width: 305px;
 `

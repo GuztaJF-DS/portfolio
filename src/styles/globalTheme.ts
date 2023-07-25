@@ -3,7 +3,6 @@ import { createGlobalStyle } from 'styled-components';
 export const Global = createGlobalStyle`
   * {
     margin: 0;
-    background-color: #fffbf4;
     color: #292929;
     outline: 0;
     font-family: 'Noto Sans', sans-serif;
@@ -14,6 +13,7 @@ export const Global = createGlobalStyle`
     scroll-margin-top: -100px;
   }
   html, body {
+    background-color: #fffbf4;
     cursor: default;
     z-index: 0;
     min-height: 100vh;
