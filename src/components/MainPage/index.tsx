@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Link from 'next/link';
 import { MainContainer, AnimatedTitle, AnimatedSubTitle, LinkContainer } from './styles';
 
-export default function Home() {
+export default function MainPage() {
   let [currentColor,setCurrentColor] = useState("#d63131");
   return (
     <>
@@ -13,7 +13,7 @@ export default function Home() {
           <Link 
             onMouseOver={()=>{setCurrentColor("#179742")}}
             onMouseOut={()=>{setCurrentColor("#d63131")}}
-            href={'https://anotherflix.vercel.app/'}
+            href={'/projects'}
             className={"Link"}
           >
             Projects
@@ -21,7 +21,7 @@ export default function Home() {
           <Link 
             onMouseOver={()=>{setCurrentColor("#1d5283")}}
             onMouseOut={()=>{setCurrentColor("#d63131")}}
-            href={'https://anotherflix.vercel.app/'}
+            href={'/studies'}
             className={"Link"}
           >
             Studies
@@ -29,7 +29,7 @@ export default function Home() {
           <Link 
             onMouseOver={()=>{setCurrentColor("#8424c4")}}
             onMouseOut={()=>{setCurrentColor("#d63131")}}
-            href={'https://anotherflix.vercel.app/'}
+            href={'/blog'}
             className={"Link"}
           >
             Blog
