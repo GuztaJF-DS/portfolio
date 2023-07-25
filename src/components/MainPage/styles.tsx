@@ -13,12 +13,15 @@ export const AnimatedTitle = Styled.h1`
     25% {opacity:1;}
     100% {margin-right:var(--margin-width);}
   }
+  @keyframes breathe {
+    0% {font-size: 6vw;}
+    50% {font-size: 6.01vw;}
+    100% {font-size: 6vw;}
+  }
   align-self:flex-end;
   font-size: 6vw;
   width: fit-content;
-  animation-fill-mode: forwards;
-  animation-name: animation;
-  animation-duration: 3s;
+  animation:animation 3s forwards, breathe 10s 3s linear infinite;
   background-color: #fffbf4;
   @media (max-width:768px){
     --margin-width: 10vw;
@@ -41,15 +44,16 @@ export const AnimatedSubTitle = Styled.h1`
     25%  {opacity:1;}
     100% {margin-right:var(--margin-width);; opacity:1;}
   }
-  background-color: #fffbf4;
+  @keyframes subBreathe {
+    0% {font-size: 2.5vw;}
+    50% {font-size: 2.501vw;}
+    100% {font-size: 2.5vw;}
+  }
   opacity:0;
   align-self:flex-end;
   font-size: 2.5vw;
   width: fit-content;
-  animation-name: subAnimation;
-  animation-fill-mode: forwards;
-  animation-delay: 3s;
-  animation-duration: 3s;
+  animation:subAnimation 3s 3s forwards, subBreathe 10s 6s linear infinite;
   @media (max-width:768px){
     font-size: 4.5vw;
   --margin-width: 2vw;
