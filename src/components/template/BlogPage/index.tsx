@@ -3,12 +3,12 @@ import { useRouter } from 'next/router';
 import SimpleList from '../../organisms/SimpleList';
 import PageTemplate from '../../organisms/PageTemplate';
 
-export default function ProjectsPage() {
+export default function BlogPage() {
   const router = useRouter();
   const { page } = router.query;
 
   return (
-    <PageTemplate HeaderColor={'#179742'}>{
+    <PageTemplate HeaderColor={'#8424c4'}>{
       (()=>{
         switch(page){
           case 'SimpleList':{
@@ -19,8 +19,8 @@ export default function ProjectsPage() {
           default: {
             return (
               <div>
-                <h3>Projects:</h3>{'\n'}
-                Hello, this is the Projects section, You can choose a project of mine to see:{'\n'}
+                <h3>Blog:</h3>{'\n'}
+                Hello, this is the Blog section, i will be making some posts, about things, not necessarily about Computers:{'\n'}
               </div>
             )
           }

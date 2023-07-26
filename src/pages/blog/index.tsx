@@ -1,10 +1,8 @@
 import React from 'react'
-import MainPage from '../../components/template/MainPage';
+import BlogPage from '@/components/template/BlogPage';
 
 export default function Home() {
   return (
-    <>
-      Blog
-    </>
+    <BlogPage/>
   );
 }
