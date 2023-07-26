@@ -6,6 +6,14 @@ export const MainContainer = Styled.div`
   flex-direction:column;
 `;
 
+export const ContentDiv = Styled.div`
+  padding:20px 35px;
+  @media (max-width:768px){
+    width:100%;
+    padding:20px 15px;
+  }
+`;
+
 export const LinkContainer = Styled.li`
   padding:24px 15px 0px 22px;
   display:flex;
@@ -16,16 +24,4 @@ export const LinkContainer = Styled.li`
     background-color:#4b202000;
     transition:color 0.3s;
   }
-`;
-
-export const ContentDiv = Styled.div`
-  padding:20px 35px;
-  @media (max-width:768px){
-    width:100%;
-    padding:20px 15px;
-  }
-`;
-
-export const IntroSection = Styled.div`
-  white-space: pre-line;
 `;

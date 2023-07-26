@@ -1,24 +1,4 @@
-import React, {useState, ReactNode} from 'react'
 import Styled from 'styled-components';
-
-export default function Header(
-  {children, backgroundColor = '#179742', height}:
-  {children?: ReactNode; backgroundColor?:string; height?:string}
-) {
-  let [HeaderOpen,setHeaderOpen] = useState(true);
-  return (
-    <>
-      <Test>
-        <HeaderContainer height={height} backgroundColor={backgroundColor} open={HeaderOpen}>
-          {children}
-        </HeaderContainer>
-      </Test>
-      <HeaderButton open={HeaderOpen} backgroundColor={backgroundColor} onClick={()=>{setHeaderOpen(!HeaderOpen);}}>{
-        HeaderOpen?'<':'>'
-      }</HeaderButton>
-    </>
-  );
-}
 
 interface HeaderProps {
   open: boolean;
@@ -26,7 +6,7 @@ interface HeaderProps {
   height?: string;
 };
 
-const Test = Styled.div`
+export const MainContainer = Styled.div`
   *::-webkit-scrollbar {
     width: 16px;
   }
@@ -37,7 +17,7 @@ const Test = Styled.div`
   }
 `
 
-const HeaderContainer = Styled.ul<HeaderProps>`
+export const HeaderContainer = Styled.ul<HeaderProps>`
   background-color:${(props) => props?.backgroundColor};
   overflow: hidden;
   white-space: nowrap;

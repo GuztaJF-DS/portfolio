@@ -34,12 +34,12 @@ ${({ selected }) => css`
 `}
 `
 
-export const StyledButton = Styled.button`
+export const ListButton = Styled.button`
   width: 210px;
   margin-top:10px;
 `
 
-export const StyledInput = Styled.input`
+export const ListInput = Styled.input`
   width: 210px;
   margin-top:10px;
 `

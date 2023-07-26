@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Header from '../Header';
-import SimpleList from '../SimpleList';
-import { MainContainer, LinkContainer, ContentDiv, IntroSection } from './styles';
+
+import Header from '../../atoms/Header';
+import SimpleList from '../../organisms/SimpleList';
+import { MainContainer, LinkContainer, ContentDiv, IntroSection } from './style';
 
 export default function StudiesPage() {
   const router = useRouter();

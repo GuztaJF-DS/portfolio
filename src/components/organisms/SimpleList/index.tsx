@@ -5,8 +5,8 @@ import {
   ContentContainer,
   Square,
   SquareContainer,
-  StyledButton,
-  StyledInput,
+  ListButton,
+  ListInput,
   Description
 } from './style';
 import { IFilteredList } from '@/interfaces/SimpleList';
@@ -98,11 +98,11 @@ export default function SimpleList() {
               )
             })}
           </SquareContainer>
-          <StyledInput 
+          <ListInput 
             type='number'
             value={numberToAdd}
             placeholder='Number To Add'
-            onChange={(e)=>{setNumberToAdd(parseFloat(e.target.value));}}
+            onChange={(e:any)=>{setNumberToAdd(parseFloat(e.target.value));}}
           />
           <p>
             Current Amount: {list.length}
@@ -110,10 +110,10 @@ export default function SimpleList() {
           <p>
             Is a Palindrome: {CheckPalindrome()}
           </p>
-          <StyledButton onClick={AddList}>Add at the end</StyledButton>
-          <StyledButton onClick={UnshiftList}>Add at the start</StyledButton>
-          <StyledButton onClick={AddAtPosition}>Add At {selected?.data || 'random'} Position</StyledButton>
-          <StyledButton onClick={()=>{console.log(list)}}>Log List - Debug</StyledButton>
+          <ListButton onClick={AddList}>Add at the end</ListButton>
+          <ListButton onClick={UnshiftList}>Add at the start</ListButton>
+          <ListButton onClick={AddAtPosition}>Add At {selected?.data || 'random'} Position</ListButton>
+          <ListButton onClick={()=>{console.log(list)}}>Log List - Debug</ListButton>
         </div>
         <Description>
           This is a Linked list, it&apos;s a common data structure, being a chain of nodes that connect
