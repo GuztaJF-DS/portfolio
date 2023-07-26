@@ -5,22 +5,16 @@ import Header from '../Header';
 import SimpleList from '../SimpleList';
 import { MainContainer, LinkContainer, ContentDiv, IntroSection } from './styles';
 
-export default function StudiesPage() {
+export default function ProjectsPage() {
   const router = useRouter();
   const { page } = router.query;
 
   return (
     <MainContainer>
-      <Header height='21vh' backgroundColor={'#1d5283'}>
+      <Header backgroundColor={'#179742'} height={'12vh'}>
         <LinkContainer>
           <Link href={'/'} className={'Link'}>
             ᐊ Return
-          </Link>
-          <Link href={'/studies'} className={'Link'}>
-            Introduction
-          </Link>
-          <Link href={'?page=SimpleList'} className={'Link'}>
-            Simple Linked List
           </Link>
         </LinkContainer>
       </Header>
@@ -36,12 +30,8 @@ export default function StudiesPage() {
               default: {
                 return (
                   <IntroSection>
-                    <h3>Studies:</h3>{'\n'}
-                    Hello, this is the studies section, here i will show some programming concepts, paradigms{'\n'}
-                    algorithms, and data structures.{'\n'}
-                    This is probably the one that will take longer to make, mainly because i not only have to{'\n'}
-                    learn the thing, but i also have to make it work and explain it, so expect a snail&apos;s pace here.{'\n'}
-                    Anyway, feel free to look at the stuff I&apos;ve already done :){'\n'}
+                    <h3>Projects:</h3>{'\n'}
+                    Hello, this is the Projects section, You can choose a project of mine to see:{'\n'}
                   </IntroSection>
                 )
               }

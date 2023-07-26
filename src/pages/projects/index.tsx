@@ -1,10 +1,8 @@
 import React from 'react'
-import MainPage from '../../components/MainPage';
+import ProjectsPage from '@/components/ProjectsPage ';
 
 export default function Home() {
   return (
-    <>
-      Projects
-    </>
+    <ProjectsPage/>
   );
 }
