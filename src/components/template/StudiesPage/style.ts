@@ -11,7 +11,7 @@ export const LinkContainer = Styled.div`
   display:flex;
   flex-direction:column;
   .Link {
-    margin-bottom:10px;
+    margin-top:10px;
     transition:color 0.3s;
   }
 `;

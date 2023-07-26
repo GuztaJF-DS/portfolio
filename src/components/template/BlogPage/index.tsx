@@ -8,7 +8,7 @@ export default function BlogPage() {
   const { page } = router.query;
 
   return (
-    <PageTemplate HeaderColor={'#8424c4'}>{
+    <PageTemplate HeaderColor={'#7e35af'}>{
       (()=>{
         switch(page){
           case 'SimpleList':{

@@ -27,7 +27,7 @@ export default function MainPage() {
             Studies
           </Link>
           <Link 
-            onMouseOver={()=>{setCurrentColor("#8424c4")}}
+            onMouseOver={()=>{setCurrentColor("#7e35af")}}
             onMouseOut={()=>{setCurrentColor("#d63131")}}
             href={'/blog'}
             className={"Link"}

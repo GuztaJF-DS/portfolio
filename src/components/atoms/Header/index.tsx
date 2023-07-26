@@ -1,5 +1,5 @@
 import React, {ReactNode} from 'react'
-import { HeaderContainer } from './style';
+import { HeaderContainer, ShadowMaskContainer } from './style';
 
 export default function Header(
   {children, backgroundColor = '#179742'}:
@@ -7,8 +7,10 @@ export default function Header(
 ) {
   return (  
     <HeaderContainer backgroundColor={backgroundColor}>
-      Gustavo&apos;s Portfolio
-      {children}
+      <ShadowMaskContainer>
+        Gustavo&apos;s Portfolio
+        {children}
+      </ShadowMaskContainer>
     </HeaderContainer>
   );
 }
