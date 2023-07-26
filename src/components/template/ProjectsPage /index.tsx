@@ -1,9 +1,7 @@
 import React from 'react'
-import Link from 'next/link';
 import { useRouter } from 'next/router';
-import Header from '../../atoms/Header';
 import SimpleList from '../../organisms/SimpleList';
-import { MainContainer, LinkContainer, ContentDiv, IntroSection } from './style';
+import { IntroSection } from './style';
 import PageTemplate from '../../organisms/PageTemplate';
 
 export default function ProjectsPage() {

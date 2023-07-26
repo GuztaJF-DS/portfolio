@@ -1,21 +1,14 @@
-import React, {useState, ReactNode} from 'react'
-import { MainContainer, HeaderContainer, HeaderButton } from './style';
+import React, {ReactNode} from 'react'
+import { HeaderContainer } from './style';
 
 export default function Header(
-  {children, backgroundColor = '#179742', height}:
-  {children?: ReactNode; backgroundColor?:string; height?:string}
+  {children, backgroundColor = '#179742'}:
+  {children?: ReactNode; backgroundColor?:string;}
 ) {
-  let [HeaderOpen,setHeaderOpen] = useState(true);
-  return (
-    <>
-      <MainContainer>
-        <HeaderContainer height={height} backgroundColor={backgroundColor} open={HeaderOpen}>
-          {children}
-        </HeaderContainer>
-      </MainContainer>
-      <HeaderButton open={HeaderOpen} backgroundColor={backgroundColor} onClick={()=>{setHeaderOpen(!HeaderOpen);}}>{
-        HeaderOpen?'<':'>'
-      }</HeaderButton>
-    </>
+  return (  
+    <HeaderContainer backgroundColor={backgroundColor}>
+      Gustavo&apos;s Portfolio
+      {children}
+    </HeaderContainer>
   );
 }

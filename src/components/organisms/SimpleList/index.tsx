@@ -77,7 +77,6 @@ export default function SimpleList() {
   }
 
   return (
-    <main>
       <ContentContainer>
         <div>
           <p>
@@ -123,6 +122,5 @@ export default function SimpleList() {
           we have some functions for you to test it.
         </Description>
       </ContentContainer>
-    </main>
   );
 }

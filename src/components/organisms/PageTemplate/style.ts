@@ -7,21 +7,21 @@ export const MainContainer = Styled.div`
 `;
 
 export const ContentDiv = Styled.div`
-  padding:20px 35px;
+  display:flex;
+  justify-content:center;
+  width:100%;
+  padding:40px 35px;
   @media (max-width:768px){
-    width:100%;
     padding:20px 15px;
   }
 `;
 
-export const LinkContainer = Styled.li`
-  padding:24px 15px 0px 22px;
+export const LinkContainer = Styled.div`
+  width: 30%;
   display:flex;
-  flex-direction:column;
+  justify-content:space-between;
   .Link {
-    margin-bottom:10px;
-    color:#fffbf4;
-    background-color:#4b202000;
-    transition:color 0.3s;
+    text-align:center;
+    width: 33%;
   }
 `;
