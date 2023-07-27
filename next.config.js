@@ -3,4 +3,16 @@ const nextConfig = {
   reactStrictMode: true,
 };
 
-module.exports = nextConfig;
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'i.ibb.co',
+        port: '',
+        pathname: '/**',
+      },
+    ],
+  },
+  ...nextConfig
+}

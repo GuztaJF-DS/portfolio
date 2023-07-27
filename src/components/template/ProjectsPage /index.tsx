@@ -2,6 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router';
 import SimpleList from '../../organisms/SimpleList';
 import PageTemplate from '../../organisms/PageTemplate';
+import ProjectCard from '@/components/molecules/ProjectCard';
 
 export default function ProjectsPage() {
   const router = useRouter();
@@ -21,6 +22,7 @@ export default function ProjectsPage() {
               <div>
                 <h3>Projects:</h3>{'\n'}
                 Hello, this is the Projects section, You can choose a project of mine to see:{'\n'}
+                <ProjectCard imageUrl='' title='Title' subTitle='Sub Title' projectUrl='/projects/description?title=title' />
               </div>
             )
           }
