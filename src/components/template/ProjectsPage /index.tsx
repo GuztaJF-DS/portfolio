@@ -28,19 +28,19 @@ export default function ProjectsPage() {
                     imageUrl='https://i.ibb.co/4dY2hWw/blur.jpg'
                     title='AnotherFlix'
                     subTitle='An Netflix UI Clone'
-                    projectUrl='/projects/description?title=anotherflix'
+                    projectUrl='/projects/description?id=1'
                   />
                   <ProjectCard 
                     imageUrl='https://i.ibb.co/4dY2hWw/blur.jpg'
                     title='Spotify UI Clone'
                     subTitle='The name says it all'
-                    projectUrl='/projects/description?title=spotify'
+                    projectUrl='/projects/description?id=2'
                   />
                   <ProjectCard 
                     imageUrl='https://i.ibb.co/4dY2hWw/blur.jpg'
                     title='API Requester'
                     subTitle='An app to show my APIs (or another one)'
-                    projectUrl='/projects/description?title=api'
+                    projectUrl='/projects/description?id=3'
                   />
                 </CardsContainer>
               </div>

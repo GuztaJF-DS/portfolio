@@ -1,0 +1,11 @@
+[
+  {
+    "id":"1",
+    "Name":"AnotherFlix",
+    "SubTitle":"An Netflix UI Clone",
+    "Description":"A Simple UI Clone of Netflix, as always, is more to train the techniques used than actually making a ground-breaking website, still was kind of fun to make this, especially the artwork, which some are custom made to get this Netflix style, most i got from official art, but the Kirby especially the melee ones i made, the latter of which i took the screenshots used. Besides that, i still need to finish, at least the main menu, things like making the card clickable or the responsivity of the site.",
+    "ImageUrl":"https://i.ibb.co/4dY2hWw/blur.jpg",
+    "Link":"https://anotherflix.vercel.app/",
+    "GitLink":"https://github.com/GuztaJF-DS/portfolio"
+  }
+]

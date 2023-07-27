@@ -1,8 +1,8 @@
 import React from 'react'
-import ProjectsPage from '@/components/template/ProjectsPage ';
+import DescriptionPage from '@/components/template/DescriptionPage';
 
 export default function Home() {
   return (
-    <ProjectsPage/>
+    <DescriptionPage/>
   );
 }
