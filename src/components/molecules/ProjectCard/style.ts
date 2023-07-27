@@ -2,7 +2,7 @@ import Styled from 'styled-components';
 
 export const MainContainer = Styled.div`
   display: flex;
-  width:80%;
+  width:100%;
   height:10vw;
   @media (max-width:768px){
     height:15vw;

@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import SimpleList from '../../organisms/SimpleList';
 import PageTemplate from '../../organisms/PageTemplate';
 import ProjectCard from '@/components/molecules/ProjectCard';
+import { CardsContainer } from './style';
 
 export default function ProjectsPage() {
   const router = useRouter();
@@ -22,7 +23,26 @@ export default function ProjectsPage() {
               <div>
                 <h3>Projects:</h3>{'\n'}
                 Hello, this is the Projects section, You can choose a project of mine to see:{'\n'}
-                <ProjectCard imageUrl='' title='Title' subTitle='Sub Title' projectUrl='/projects/description?title=title' />
+                <CardsContainer>
+                  <ProjectCard 
+                    imageUrl='https://i.ibb.co/4dY2hWw/blur.jpg'
+                    title='AnotherFlix'
+                    subTitle='An Netflix UI Clone'
+                    projectUrl='/projects/description?title=anotherflix'
+                  />
+                  <ProjectCard 
+                    imageUrl='https://i.ibb.co/4dY2hWw/blur.jpg'
+                    title='Spotify UI Clone'
+                    subTitle='The name says it all'
+                    projectUrl='/projects/description?title=spotify'
+                  />
+                  <ProjectCard 
+                    imageUrl='https://i.ibb.co/4dY2hWw/blur.jpg'
+                    title='API Requester'
+                    subTitle='An app to show my APIs (or another one)'
+                    projectUrl='/projects/description?title=api'
+                  />
+                </CardsContainer>
               </div>
             )
           }

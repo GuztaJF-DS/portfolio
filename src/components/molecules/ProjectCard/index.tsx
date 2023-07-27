@@ -13,7 +13,7 @@ interface ProjectCardProps{
 export default function ProjectCard({ imageUrl, title, subTitle, projectUrl }:ProjectCardProps) {
   return (
   <MainContainer>
-    <ResponsiveCardImage />
+    <ResponsiveCardImage imageUrl={imageUrl}/>
     <ContentContainer>
       <div>
         <h3>{title}</h3>
