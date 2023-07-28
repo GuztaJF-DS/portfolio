@@ -5,18 +5,16 @@ export const MainContainer = Styled.div`
   flex-direction:column;
   max-width:1120px;
   word-break: break-word;
-  @media (max-width:768px){
-    font-size:0.8em;
+  @media (max-width:1440px){
+    max-width:90vw;
   }
-  @media (max-width:598px){
-    font-size:0.6em;
+  > h3{
+    font-size: 18px;
   }
-  @media (max-width:425px){
-    font-size:0.6em;
-    max-width:80vw;
+  > p {
+    font-size: 16px;
   }
 `
-
 export const CardsContainer = Styled.div`
   margin-top:20px;
   display:grid;
@@ -25,10 +23,10 @@ export const CardsContainer = Styled.div`
   @media(min-width:1440px){
     grid-template-columns: 360px  360px 360px;
   }
-  @media (max-width:890px){
-    grid-template-columns: 36vw  36vw;
+  @media (max-width:768px){
+    grid-template-columns: 40vw  40vw;
   }
-  @media (max-width:455px){
-    grid-template-columns: 80vw;
+  @media (max-width:675px){
+    grid-template-columns: 90vw;
   }
 `

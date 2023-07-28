@@ -29,12 +29,14 @@ export const ContentContainer = Styled.div`
   @media (max-width:1130px){
     font-size:0.7em;
   }
-  @media (max-width:890px){
-    font-size:0.9em;
+  @media (max-width:768px){
+    font-size:0.8em;
+  }
+  @media(max-width: 675px){
+    width: 100%;
   }
   @media (max-width:455px){
-    width: 85%;
-    font-size:1.05em;
+    font-size:0.75em;
   }
 `;
 

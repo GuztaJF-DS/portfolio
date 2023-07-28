@@ -21,8 +21,8 @@ export default function ProjectsPage() {
           default: {
             return (
               <MainContainer>
-                <h3>Projects:</h3>{'\n'}
-                Hello, this is the Projects section, You can choose a project of mine to see:{'\n'}
+                <h3>Projects:</h3>
+                <p>Hello, this is the Projects section, You can choose a project of mine to see:</p>
                 <CardsContainer>
                   <ProjectCard 
                     imageUrl='https://i.ibb.co/4dY2hWw/blur.jpg'
