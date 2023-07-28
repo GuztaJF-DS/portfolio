@@ -24,4 +24,9 @@ export const LinkContainer = Styled.div`
     text-align:center;
     width: 33%;
   }
+
+  @media (max-width:768px){
+    width: 70%;
+    background:red;
+  }
 `;

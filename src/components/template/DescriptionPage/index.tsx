@@ -1,9 +1,9 @@
 import React from 'react'
 import { useRouter } from 'next/router';
-import PageTemplate from '../../organisms/PageTemplate';
-import { ProjectInfo } from './style';
-import projectsDescription from '../../../dataMocks/ProjectsDescription.json';
+import { ProjectInfo, MainContainer } from './style';
 import CoverCard from '@/components/molecules/CoverCard';
+import PageTemplate from '../../organisms/PageTemplate';
+import projectsDescription from '../../../dataMocks/ProjectsDescription.json';
 
 export default function DescriptionPage() {
   const router = useRouter();
@@ -22,17 +22,19 @@ export default function DescriptionPage() {
 
   return (
     <PageTemplate HeaderColor={'#179742'}>
-      <ProjectInfo>
-        <h2>{currentProject.Name}:</h2>
-        <a>{currentProject.Description}</a>
-      </ProjectInfo>
-      <CoverCard 
-        title={currentProject.Name}
-        subTitle={currentProject.SubTitle}
-        imageUrl={currentProject.ImageUrl}
-        siteLink={currentProject.Link}
-        gitLink={currentProject.GitLink}
-      />
+      <MainContainer>
+        <ProjectInfo>
+          <h2>{currentProject.Name}:</h2>
+          <a>{currentProject.Description}</a>
+        </ProjectInfo>
+        <CoverCard 
+          title={currentProject.Name}
+          subTitle={currentProject.SubTitle}
+          imageUrl={currentProject.ImageUrl}
+          siteLink={currentProject.Link}
+          gitLink={currentProject.GitLink}
+        />
+      </MainContainer>
     </PageTemplate>
   );
 }

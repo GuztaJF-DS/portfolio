@@ -22,6 +22,17 @@ export const ContentContainer = Styled.div`
     font-weight:500;
     font-size:0.82em;
   }
+
+  @media (max-width:1130px){
+    font-size:0.8em;
+  }
+  @media (max-width:890px){
+    font-size:0.6em;
+  }
+  @media (max-width:425px){
+    width: 85%;
+    font-size:1em;
+  }
 `;
 
 export const LinkContainer = Styled.div`

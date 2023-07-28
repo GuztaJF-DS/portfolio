@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import SimpleList from '../../organisms/SimpleList';
 import PageTemplate from '../../organisms/PageTemplate';
 import ProjectCard from '@/components/molecules/ProjectCard';
-import { CardsContainer } from './style';
+import { MainContainer, CardsContainer } from './style';
 
 export default function ProjectsPage() {
   const router = useRouter();
@@ -20,7 +20,7 @@ export default function ProjectsPage() {
           }
           default: {
             return (
-              <div>
+              <MainContainer>
                 <h3>Projects:</h3>{'\n'}
                 Hello, this is the Projects section, You can choose a project of mine to see:{'\n'}
                 <CardsContainer>
@@ -43,7 +43,7 @@ export default function ProjectsPage() {
                     projectUrl='/projects/description?id=3'
                   />
                 </CardsContainer>
-              </div>
+              </MainContainer>
             )
           }
       }})()
