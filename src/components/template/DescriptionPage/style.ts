@@ -15,8 +15,10 @@ export const MainContainer = Styled.div`
 export const ProjectInfo = Styled.div`
   display: flex;
   flex-direction:column;
-  width: 50%;
+  min-width: 50%;
   padding-right:30px;
+  white-space: pre-line;
+  
   * {
     margin-bottom:10px;
   }

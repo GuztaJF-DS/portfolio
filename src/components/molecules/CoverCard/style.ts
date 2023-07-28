@@ -6,6 +6,7 @@ export const MainContainer = Styled.div`
   justify-content:center;
   align-items:center;
   flex-direction:column;
+  text-align:center;
   border:20px #e0e0e0 solid;
   border-bottom:5px;
   * {

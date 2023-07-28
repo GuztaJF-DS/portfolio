@@ -7,5 +7,24 @@
     "ImageUrl":"https://i.ibb.co/4dY2hWw/blur.jpg",
     "Link":"https://anotherflix.vercel.app/",
     "GitLink":"https://github.com/GuztaJF-DS/portfolio"
+  },
+  {
+    "id":"2",
+    "Name":"Spotify UI Clone",
+    "SubTitle":"The name says it all",
+    "Description":"This is an unfinished clone of Spotify, i did it in January 2022, but before finishing it i got my first job, and I'm not going to finish because the code isn't that great, since i got a lot better at code i can see this now, but I'm still going to show because i think it looks good enough, it was also fun to code this, so i have some good memories about it.\n I also am not sure about the copyright part, i don't think it has any problem using real album covers, since i don't actually play the songs, anyway feel free to look.",
+    "ImageUrl":"https://i.ibb.co/4dY2hWw/blur.jpg",
+    "Link":"https://spotifycloneui.netlify.app/",
+    "GitLink":"https://github.com/GuztaJF-DS/SpotifyUiClone"
+  },
+  {
+    "id":"3", 
+    "Name":"API Requester",
+    "SubTitle":"An app to show my APIs (or another one)",
+    "Description":"After realizing that i did some backend-only projects, i decided that i should have some sort of way of displaying them, so i did this app that executes requests, although i planned to use it with my APIs, you can request any API here.\nI did this project in Vue JS, i wanted to do something different, and i liked Vue, althought there were some things i didn't like (mainly some shortcuts i can do in React), i think my expirience using it was positive, and i plan to fully adapt to it, and learn how to do some of those tricks i got used in React.\nI also want to add some features, like create some inputs to make requesting my own APIs easier {and} Add my other APIs.",
+    "ImageUrl":"https://i.ibb.co/4dY2hWw/blur.jpg",
+    "Link":"https://api-requester.vercel.app/",
+    "GitLink":"https://github.com/GuztaJF-DS/Api-requester"
   }
+
 ]
