@@ -5,6 +5,13 @@ export const ContentSection = Styled.div`
   flex-direction:row;
   justify-content:space-between;
   width: 80%;
+  @media (max-width:768px){
+    width: 90%;
+    flex-direction:column;
+    > div {
+      margin-bottom:20px;
+    }
+  }
 `;
 
 export const LinkContainer = Styled.div`

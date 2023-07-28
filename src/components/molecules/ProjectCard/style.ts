@@ -4,11 +4,14 @@ export const MainContainer = Styled.div`
   display: flex;
   width:100%;
   height:10vw;
+  @media (min-width:1440px){
+    height:144px;
+  }
   @media (max-width:768px){
     height:15vw;
   }
-  @media (min-width:1440px){
-    height:144px;
+  @media (max-width:455px){
+    height:20vw;
   }
 `;
 
@@ -27,11 +30,11 @@ export const ContentContainer = Styled.div`
     font-size:0.7em;
   }
   @media (max-width:890px){
-    font-size:0.7em;
+    font-size:0.9em;
   }
-  @media (max-width:425px){
+  @media (max-width:455px){
     width: 85%;
-    font-size:1em;
+    font-size:1.05em;
   }
 `;
 

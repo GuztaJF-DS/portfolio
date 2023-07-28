@@ -28,7 +28,7 @@ export const CardsContainer = Styled.div`
   @media (max-width:890px){
     grid-template-columns: 36vw  36vw;
   }
-  @media (max-width:425px){
+  @media (max-width:455px){
     grid-template-columns: 80vw;
   }
 `
