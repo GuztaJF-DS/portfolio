@@ -24,10 +24,10 @@ export const ContentContainer = Styled.div`
   }
 
   @media (max-width:1130px){
-    font-size:0.8em;
+    font-size:0.7em;
   }
   @media (max-width:890px){
-    font-size:0.6em;
+    font-size:0.7em;
   }
   @media (max-width:425px){
     width: 85%;
@@ -37,6 +37,7 @@ export const ContentContainer = Styled.div`
 
 export const LinkContainer = Styled.div`
   display: flex;
+  word-break: keep-all;
   font-size:0.8em;
   align-items:flex-end;
   .Link:hover{

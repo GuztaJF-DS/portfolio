@@ -27,4 +27,7 @@ export const ShadowMaskContainer = Styled.div`
     color:#fffbf4;
     transition:color 0.3s;
   }
+  @media (max-width:768px){
+    height: 12vh;
+  }
 `;

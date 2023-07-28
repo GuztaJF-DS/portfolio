@@ -4,6 +4,7 @@ export const MainContainer = Styled.div`
   display: flex;
   flex-direction:column;
   max-width:1120px;
+  word-break: break-word;
   @media (max-width:768px){
     font-size:0.8em;
   }
@@ -11,7 +12,8 @@ export const MainContainer = Styled.div`
     font-size:0.6em;
   }
   @media (max-width:425px){
-    font-size:0.5em;
+    font-size:0.6em;
+    max-width:80vw;
   }
 `
 
@@ -27,6 +29,6 @@ export const CardsContainer = Styled.div`
     grid-template-columns: 36vw  36vw;
   }
   @media (max-width:425px){
-    grid-template-columns: 80vw ;
+    grid-template-columns: 80vw;
   }
 `

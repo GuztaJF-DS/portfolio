@@ -5,8 +5,8 @@ export const ImageContainer = Styled.div`
   width:20vw;
   height:20vw;
   @media (max-width:768px){
-    width:15vw;
-    height:15vw;
+    width:25vw;
+    height:25vw;
   }
   @media (min-width:1440px){
     width:144px;
