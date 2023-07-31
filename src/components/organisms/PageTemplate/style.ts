@@ -11,6 +11,7 @@ export const ContentDiv = Styled.div`
   justify-content:center;
   width:100%;
   padding:40px 35px;
+  margin-bottom:4vh;
   @media (max-width:768px){
     padding:20px 15px;
   }

@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link';
 import { useRouter } from 'next/router';
-import SimpleList from '../../organisms/SimpleList';
+import { ContentSection, LinkContainer } from './style';
 import PageTemplate from '../../organisms/PageTemplate';
 
 export default function BlogPage() {
@@ -8,23 +9,27 @@ export default function BlogPage() {
   const { page } = router.query;
 
   return (
-    <PageTemplate HeaderColor={'#7e35af'}>{
-      (()=>{
-        switch(page){
-          case 'SimpleList':{
-            return(
-              <SimpleList />
-            )
-          }
-          default: {
-            return (
-              <div>
-                <h3>Blog:</h3>{'\n'}
-                Hello, this is the Blog section, i will be making some posts, about things, not necessarily about Computers:{'\n'}
-              </div>
-            )
-          }
-      }})()
-    }</PageTemplate>
+    <PageTemplate HeaderColor={'#7e35af'}>
+      <ContentSection>
+        <LinkContainer>
+          <h3>Blog:</h3>
+          <Link href={'/studies'} className={'Link'}>
+            Introduction
+          </Link>
+        </LinkContainer>
+        {
+        (()=>{
+          switch(page){
+            default: {
+              return (
+                <div>
+                  Hello, this is the Blog section, i will be making some posts, about things, not necessarily about Computers
+                </div>
+              )
+            }
+        }})()
+      }
+      </ContentSection>
+    </PageTemplate>
   );
 }
