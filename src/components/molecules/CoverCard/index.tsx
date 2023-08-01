@@ -7,18 +7,18 @@ interface CoverCardProps{
   title: string;
   subTitle: string;
   imageUrl: string;
-  siteLink: string;
-  gitLink: string;
+  appUrl: string;
+  gitUrl: string;
 }
 
-export default function CoverCard({ title, subTitle, imageUrl, siteLink, gitLink }:CoverCardProps) {
+export default function CoverCard({ title, subTitle, imageUrl, appUrl, gitUrl }:CoverCardProps) {
   return (
   <MainContainer>
     <h4>{title}</h4>
     <ResponsiveCoverImage imageUrl={imageUrl}/>
     <h4>{subTitle}</h4>
-    <Link href={siteLink}>WebSite Link</Link>
-    <Link href={gitLink}>Github Link</Link>
+    <Link href={appUrl}>WebSite Link</Link>
+    <Link href={gitUrl}>Github Link</Link>
   </MainContainer>
   );
 }
