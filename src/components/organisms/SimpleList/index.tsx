@@ -101,7 +101,7 @@ export default function SimpleList() {
             type='number'
             value={numberToAdd}
             placeholder='Number To Add'
-            onChange={(e:any)=>{setNumberToAdd(parseFloat(e.target.value));}}
+            onChange={(e:React.FormEvent<HTMLInputElement>)=>{setNumberToAdd(parseFloat(e.currentTarget.value));}}
           />
           <p>
             Current Amount: {list.length}

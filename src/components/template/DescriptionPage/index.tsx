@@ -2,8 +2,9 @@ import React from 'react'
 import { ProjectInfo, MainContainer } from './style';
 import CoverCard from '@/components/molecules/CoverCard';
 import PageTemplate from '../../organisms/PageTemplate';
+import { IProjects } from '@/interfaces/Projects';
 
-export default function DescriptionPage({project}:any) {
+export default function DescriptionPage({project}:{project:IProjects}) {
   if(!project){
     return (
       <PageTemplate HeaderColor={'#179742'}>
