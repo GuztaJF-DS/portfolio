@@ -1,5 +1,6 @@
 import React, { ReactNode, useState } from 'react'
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation'
 import Header from '../../atoms/Header';
 import Footer from '../../atoms/Footer';
 import { MainContainer, ContentDiv, LinkContainer } from './style';
@@ -10,8 +11,9 @@ interface TemplateProps {
 }
 
 export default function PageTemplate({children, HeaderColor}:TemplateProps) {
-  let [currentColor,setCurrentColor] = useState(HeaderColor)
-  ;
+  let [currentColor,setCurrentColor] = useState(HeaderColor);
+  const { t } = useTranslation();
+
   return (
     <MainContainer>
       <Header backgroundColor={currentColor}>
@@ -22,7 +24,7 @@ export default function PageTemplate({children, HeaderColor}:TemplateProps) {
             href={'/projects'}
             className={"Link"}
           >
-            Projects
+            {t('common:projects')}
           </Link>
           <Link 
             onMouseOver={()=>{setCurrentColor("#1d5283")}}
@@ -30,7 +32,7 @@ export default function PageTemplate({children, HeaderColor}:TemplateProps) {
             href={'/studies'}
             className={"Link"}
           >
-            Studies
+            {t('common:studies')}
           </Link>
           <Link 
             onMouseOver={()=>{setCurrentColor("#7e35af")}}

@@ -1,9 +1,11 @@
 import React, {useState} from 'react'
 import Link from 'next/link';
 import { MainContainer, AnimatedTitle, AnimatedSubTitle, LinkContainer } from './styles';
+import useTranslation from 'next-translate/useTranslation'
 
 export default function MainPage() {
   let [currentColor,setCurrentColor] = useState("#d63131");
+  const { t } = useTranslation('common')
   return (
     <>
       <MainContainer>
@@ -16,7 +18,7 @@ export default function MainPage() {
             href={'/projects'}
             className={"Link"}
           >
-            Projects
+            {t('projects')}
           </Link>
           <Link 
             onMouseOver={()=>{setCurrentColor("#1d5283")}}
@@ -24,7 +26,7 @@ export default function MainPage() {
             href={'/studies'}
             className={"Link"}
           >
-            Studies
+            {t('studies')}
           </Link>
           <Link 
             onMouseOver={()=>{setCurrentColor("#7e35af")}}

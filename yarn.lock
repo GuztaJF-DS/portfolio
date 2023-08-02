@@ -807,11 +807,6 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-dotenv@^16.3.1:
-  version "16.3.1"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.3.1.tgz#369034de7d7e5b120972693352a3bf112172cc3e"
-  integrity sha512-IPzF4w4/Rd94bA9imS68tZBaYyBWSCE47V1RGuMrB94iyTOIEwRmVL2x/4An+6mETpLrKJ5hQkB8W4kFAadeIQ==
-
 emoji-regex@^9.2.2:
   version "9.2.2"
   resolved "https://registry.yarnpkg.com/emoji-regex/-/emoji-regex-9.2.2.tgz#840c8803b0d8047f4ff0cf963176b32d4ef3ed72"
@@ -1799,6 +1794,18 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==
 
+next-translate-plugin@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/next-translate-plugin/-/next-translate-plugin-2.5.2.tgz#44d81c8d791443370f8f27ec114c8c2bac69b6bc"
+  integrity sha512-I2PDkbUM91CrOYNPVxhWxfQituSN62Y6f5EQfrZwtJToWc5HqnKs9dFjyQ+VGY3EXx6rPYgK03MVNtI+pc1HBA==
+  dependencies:
+    typescript "4.5.2"
+
+next-translate@^2.5.2:
+  version "2.5.2"
+  resolved "https://registry.yarnpkg.com/next-translate/-/next-translate-2.5.2.tgz#7d767099b07dd41aa534db02c8cc8a7ff8b91ad8"
+  integrity sha512-5FusT+XlQGA1BAJaYu3jP8nPs3BDe/8f1u+MVM5CmIqmwOS62jUG5svq7HB4ORC6N6mvsPd7xGi3qxWyAYtwBQ==
+
 next@13.2.3:
   version "13.2.3"
   resolved "https://registry.yarnpkg.com/next/-/next-13.2.3.tgz#92d170e7aca421321f230ff80c35c4751035f42e"
@@ -2357,6 +2364,11 @@ typed-array-length@^1.0.4:
     call-bind "^1.0.2"
     for-each "^0.3.3"
     is-typed-array "^1.1.9"
+
+typescript@4.5.2:
+  version "4.5.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.5.2.tgz#8ac1fba9f52256fdb06fb89e4122fa6a346c2998"
+  integrity sha512-5BlMof9H1yGt0P8/WF+wPNw6GfctgGjXp5hkblpyT+8rkASSmkUKMXrxR0Xg8ThVCi/JnHQiKXeBaEwCeQwMFw==
 
 typescript@4.9.5:
   version "4.9.5"
