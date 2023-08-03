@@ -1,35 +1,60 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation'
 import { useRouter } from 'next/router';
-import { ContentSection, LinkContainer } from './style';
+import { MainContainer, LinkContainer, ContentContainer } from './style';
 import PageTemplate from '../../organisms/PageTemplate';
+import { IBlog, IPostVersions } from '@/interfaces/Blog';
 
-export default function BlogPage() {
+export default function BlogPage({postsData}:{postsData:IBlog[]}) {
+  const { t } = useTranslation();
   const router = useRouter();
-  const { page } = router.query;
+  const [currentPost, setCurrentPost]=useState<IPostVersions>({
+    title:t('blog:intro-title'),
+    post:t('blog:intro-post'),
+    locale:"",
+    date:new Date('2004-06-13T01:10:00')
+  });
+  const { id } = router.query;
+  const { locale } = router;
+
+  useEffect(()=>{
+    const post = postsData.find((post)=>{
+      return post._id===id;
+    });
+    if(post){
+      const postTranslated = post.versions.find((ver)=>{
+        return ver.locale===locale;
+      });
+      console.log(postTranslated)
+      setCurrentPost(postTranslated || {...currentPost, title: 'Post Not Found'});
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[id])
 
   return (
     <PageTemplate HeaderColor={'#7e35af'}>
-      <ContentSection>
+      <MainContainer>
         <LinkContainer>
           <h3>Blog:</h3>
-          <Link href={'/studies'} className={'Link'}>
-            Introduction
-          </Link>
+          {postsData.map((post)=>{
+            return (
+              <Link key={post._id} href={'?id='+post._id} className={'Link'}>
+                {
+                  post.versions.find((ver)=>{
+                    return ver.locale===locale;
+                  })?.title
+                }
+              </Link>
+            )
+          })}
         </LinkContainer>
-        {
-        (()=>{
-          switch(page){
-            default: {
-              return (
-                <div>
-                  Hello, this is the Blog section, i will be making some posts, about things, not necessarily about Computers
-                </div>
-              )
-            }
-        }})()
-      }
-      </ContentSection>
+        <ContentContainer>
+          <h1>{currentPost.title}</h1>
+          {id?(<a>{new Date(currentPost.date).toUTCString()}</a>):""}
+          <>{currentPost.post}</>
+        </ContentContainer>
+      </MainContainer>
     </PageTemplate>
   );
 }

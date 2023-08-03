@@ -5,8 +5,7 @@ import axios from 'axios';
 import LoadingPage from '@/components/template/LoadingPage';
 import { IProjects } from '@/interfaces/Projects';
 
-export default function Home() {
-    console.log()
+export default function Description() {
   const router = useRouter();
   const { id } = router.query;
   const [projectData, setProjectData] = useState();
@@ -24,7 +23,7 @@ export default function Home() {
   return (
     <>
       {!projectData ?(()=>(
-        <LoadingPage />
+        <LoadingPage headerColor={'#179742'} />
       ))():(()=>(
         <DescriptionPage project={projectData} />
       ))()}

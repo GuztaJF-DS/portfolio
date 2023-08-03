@@ -3,7 +3,7 @@ import ProjectsPage from '@/components/template/ProjectsPage';
 import axios from 'axios';
 import LoadingPage from '@/components/template/LoadingPage';
 
-export default function Home() {
+export default function Projects() {
   const [projectData, setProjectData] = useState();
   useEffect(()=>{
     axios.get(`${process.env.NEXT_PUBLIC_PORTFOLIO_API as string}/projects`)
@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
       {!projectData ?(()=>(
-        <LoadingPage />
+        <LoadingPage headerColor={'#179742'}/>
       ))():(()=>(
         <ProjectsPage projects={projectData} />
       ))()}

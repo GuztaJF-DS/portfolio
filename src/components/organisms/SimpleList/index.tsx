@@ -106,7 +106,7 @@ export default function SimpleList() {
             onChange={(e:React.FormEvent<HTMLInputElement>)=>{setNumberToAdd(parseFloat(e.currentTarget.value));}}
           />
           <p>
-            {t("studies:currentAmount")}: {list.length}
+            {t("studies:current-amount")}: {list.length}
           </p>
           <p>
             {t("studies:palindrome")}: {CheckPalindrome()}
@@ -121,7 +121,7 @@ export default function SimpleList() {
           <ListButton onClick={()=>{console.log(list)}}>{t("studies:button4")}</ListButton>
         </div>
         <Description>
-          {t("studies:linkedListText")}
+          {t("studies:linked-list-text")}
         </Description>
       </ContentContainer>
   );
