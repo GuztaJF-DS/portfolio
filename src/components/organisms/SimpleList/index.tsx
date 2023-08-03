@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import _ from 'lodash';
+import useTranslation from 'next-translate/useTranslation'
 import { SingleLinkedList } from '@/classes/singleLinkedList';
 import { 
   ContentContainer,
@@ -16,6 +17,7 @@ export default function SimpleList() {
   const [filteredList, setFilteredList] = useState<IFilteredList[]>([]);
   const [selected, setSelected] = useState<IFilteredList>();
   const [numberToAdd, setNumberToAdd] = useState<number>(0);
+  const { t } = useTranslation();
 
   //An effect to keep displaying the filtered list 
   useEffect(()=>{
@@ -80,7 +82,7 @@ export default function SimpleList() {
       <ContentContainer>
         <div>
           <p>
-            Simple Linked List
+            {t("studies:section2")}
           </p>
           <SquareContainer>
             {filteredList.map((i)=>{
@@ -104,22 +106,22 @@ export default function SimpleList() {
             onChange={(e:React.FormEvent<HTMLInputElement>)=>{setNumberToAdd(parseFloat(e.currentTarget.value));}}
           />
           <p>
-            Current Amount: {list.length}
+            {t("studies:currentAmount")}: {list.length}
           </p>
           <p>
-            Is a Palindrome: {CheckPalindrome()}
+            {t("studies:palindrome")}: {CheckPalindrome()}
           </p>
-          <ListButton onClick={AddList}>Add at the end</ListButton>
-          <ListButton onClick={UnshiftList}>Add at the start</ListButton>
-          <ListButton onClick={AddAtPosition}>Add At {selected?.data || 'random'} Position</ListButton>
-          <ListButton onClick={()=>{console.log(list)}}>Log List - Debug</ListButton>
+          <ListButton onClick={AddList}>{t("studies:button1")}</ListButton>
+          <ListButton onClick={UnshiftList}>{t("studies:button2")}</ListButton>
+          <ListButton onClick={AddAtPosition}>{
+            (selected?.data || selected?.data===0)
+              ? `${t('studies:button3')} ${selected?.data}`
+              : t('studies:button3')+t('studies:button3-part2')
+          }</ListButton>
+          <ListButton onClick={()=>{console.log(list)}}>{t("studies:button4")}</ListButton>
         </div>
         <Description>
-          This is a Linked list, it&apos;s a common data structure, being a chain of nodes that connect
-          between themselves by a pointer, which references the next item in the list, or a null value.{'\n'}
-          a good example of a linked list is a list of songs being played in a music player.{'\n'}
-          this one here it&apos;s a simple one, it only references forward, and it ends on a null, here
-          we have some functions for you to test it.
+          {t("studies:linkedListText")}
         </Description>
       </ContentContainer>
   );

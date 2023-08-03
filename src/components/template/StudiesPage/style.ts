@@ -17,6 +17,7 @@ export const ContentSection = Styled.div`
 export const LinkContainer = Styled.div`
   display:flex;
   flex-direction:column;
+  margin-right:20px;
   .Link {
     margin-top:10px;
     transition:color 0.3s;
@@ -25,4 +26,5 @@ export const LinkContainer = Styled.div`
 
 export const IntroSection = Styled.div`
   white-space: pre-line;
+  max-width:770px;
 `;
