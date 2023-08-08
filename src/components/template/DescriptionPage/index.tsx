@@ -1,11 +1,28 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useRouter } from 'next/router';
 import { ProjectInfo, MainContainer } from './style';
 import CoverCard from '@/components/molecules/CoverCard';
 import PageTemplate from '../../organisms/PageTemplate';
-import { IProjects } from '@/interfaces/Projects';
+import { IProject, IProjects } from '@/interfaces/Projects';
 
 export default function DescriptionPage({project}:{project:IProjects}) {
-  if(!project){
+  const router = useRouter();
+  const [currentProj, setCurrentProj]=useState<IProject | undefined>();
+  const { id } = router.query;
+  const { locale } = router;
+
+  useEffect(()=>{
+    if(project){
+      const projTranslated = project.versions.find((ver)=>{
+        return ver.locale===locale;
+      });
+      console.log(projTranslated)
+      setCurrentProj(projTranslated);
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  },[id])
+
+  if(!project || !currentProj){
     return (
       <PageTemplate HeaderColor={'#179742'}>
         <h1>
@@ -19,15 +36,15 @@ export default function DescriptionPage({project}:{project:IProjects}) {
     <PageTemplate HeaderColor={'#179742'}>
       <MainContainer>
         <ProjectInfo>
-          <h2>{project.title}:</h2>
-          <a>{project.description}</a>
+          <h2>{currentProj.title}:</h2>
+          <a>{currentProj.description}</a>
         </ProjectInfo>
         <CoverCard 
-          title={project.title}
-          subTitle={project.subTitle}
-          imageUrl={project.imageUrl}
-          appUrl={project.appUrl}
-          gitUrl={project.gitUrl}
+          title={currentProj.title}
+          subTitle={currentProj.subTitle}
+          imageUrl={currentProj.imageUrl}
+          appUrl={currentProj.appUrl}
+          gitUrl={currentProj.gitUrl}
         />
       </MainContainer>
     </PageTemplate>

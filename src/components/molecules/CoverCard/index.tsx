@@ -16,9 +16,9 @@ export default function CoverCard({ title, subTitle, imageUrl, appUrl, gitUrl }:
   <MainContainer>
     <h4>{title}</h4>
     <ResponsiveCoverImage imageUrl={imageUrl}/>
-    <h4>{subTitle}</h4>
-    <Link href={appUrl}>WebSite Link</Link>
-    <Link href={gitUrl}>Github Link</Link>
+    <h5>{subTitle}</h5>
+    <Link href={appUrl} className={"Link"}>WebSite Link</Link>
+    <Link href={gitUrl} className={"Link"}>Github Link</Link>
   </MainContainer>
   );
 }

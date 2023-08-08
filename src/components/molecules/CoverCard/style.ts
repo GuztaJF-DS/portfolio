@@ -13,4 +13,10 @@ export const MainContainer = Styled.div`
     margin-bottom:20px;
   }
   background:#e0e0e0;
+  h4{
+    font-size:1.1em;
+  }
+  h5, .Link {
+    font-size:0.9em;
+  }
 `;
