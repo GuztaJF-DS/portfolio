@@ -35,6 +35,7 @@ export const ContentContainer = Styled.div`
   display:flex;
   flex-direction:column;
   text-align:start;
+  white-space: pre-wrap;
   width:80%;
   a{
     font-size:0.7em;

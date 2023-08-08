@@ -29,7 +29,7 @@ export default function BlogPage({postsData}:{postsData:IBlog[]}) {
       setCurrentPost(postTranslated || {...currentPost, title: 'Post Not Found'});
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[id])
+  },[id, locale])
 
   return (
     <PageTemplate HeaderColor={'#7e35af'}>
