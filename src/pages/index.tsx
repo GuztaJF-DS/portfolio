@@ -1,55 +1,8 @@
 import React from 'react'
-import Link from 'next/link';
-import Styled from 'styled-components';
-
-const MainContainer = Styled.main`
-  .Link {
-    margin-left:12px;
-  }
-  i {
-      margin-top:10px;
-  }
-`;
+import MainPage from '../components/template/MainPage';
 
 export default function Home() {
   return (
-    <>
-      <MainContainer>
-        <p>
-          hi, i&apos;m still building most of this things, so yeah expect some bugs
-        </p>
-        <p>
-          also, welcome, and feel free to look what i&apos;ve done yet :)
-        </p>
-        <br/>
-        <i>
-          Studies:
-        </i>
-        <Link href={'/dataStructure'} className={"Link"}>
-          Data Structure
-        </Link>
-        <i>
-          Projects:
-        </i>
-        <Link href={'https://anotherflix.vercel.app/'} className={"Link"}>
-          AnotherFlix
-        </Link>
-        <Link href={'https://spotifycloneui.netlify.app/'} className={"Link"}>
-          Spotify Ui Clone - (Old project, not really planning on finishing this one)
-        </Link>
-        <Link href={'https://api-requester.vercel.app/'} className={"Link"}>
-          Api Requester - (i{"'"}ve mainly did this one to show my own APIs, but you can use with any other)
-        </Link>
-        <i>
-          Links:
-        </i>
-        <Link href={'https://github.com/GuztaJF-DS'} className={"Link"}>
-          My Github
-        </Link>
-        <Link href={'https://leetcode.com/noobshippuden13/'} className={"Link"}>
-          My LeetCode Profile
-        </Link>
-      </MainContainer>
-    </>
+    <MainPage />
   );
 }

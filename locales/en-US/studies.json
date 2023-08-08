@@ -1,0 +1,13 @@
+{
+  "section1":"Introduction",
+  "section2":"Simple Linked List",
+  "intro":"Hello, this is the studies section, here i will show some programming concepts, paradigms\nalgorithms, and data structures.\nThis is probably the one that will take longer to make, mainly because i not only have to\nlearn the thing, but i also have to make it work and explain it, so expect a snail's pace here.\nAnyway, feel free to look at the stuff I've already done:",
+  "linked-list-text":"This is a Linked list, it's a common data structure, being a chain of nodes that connect between themselves by a pointer, which references the next item in the list, or a null value. a good example of a linked list is a playlist of songs being played in a music player app. this one here it's a simple one, it only references forward, and it ends on a null, here we have some functions for you to test it.",
+  "current-amount":"Current Amount",
+  "palindrome":"Is a Palindrome",
+  "button1":"Add at the end",
+  "button2":"Add at the start",
+  "button3":"Add at ",
+  "button3-part2":"a random position",
+  "button4":"Log list - Debug"
+}
