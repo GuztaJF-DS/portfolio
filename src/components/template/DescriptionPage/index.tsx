@@ -16,11 +16,10 @@ export default function DescriptionPage({project}:{project:IProjects}) {
       const projTranslated = project.versions.find((ver)=>{
         return ver.locale===locale;
       });
-      console.log(projTranslated)
       setCurrentProj(projTranslated);
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[id])
+  },[id, locale])
 
   if(!project || !currentProj){
     return (

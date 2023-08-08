@@ -26,7 +26,6 @@ export default function BlogPage({postsData}:{postsData:IBlog[]}) {
       const postTranslated = post.versions.find((ver)=>{
         return ver.locale===locale;
       });
-      console.log(postTranslated)
       setCurrentPost(postTranslated || {...currentPost, title: 'Post Not Found'});
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps

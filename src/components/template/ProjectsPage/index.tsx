@@ -32,7 +32,6 @@ export default function ProjectsPage({projects}:{projects:IProjects[]}) {
                     const postTranslated = p.versions.find((ver)=>{
                       return ver.locale===locale;
                     });
-                    console.log(postTranslated);
                     return (
                     <ProjectCard 
                       key={p._id}
