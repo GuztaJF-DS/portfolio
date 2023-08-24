@@ -19,4 +19,4 @@ export const ImageContainer = Styled.div`
   .image {
     object-fit: cover;
   }
-`
+`;

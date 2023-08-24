@@ -1,4 +1,4 @@
-export interface IProject{
+export interface IProject {
   appUrl: string;
   description: string;
   gitUrl: string;
@@ -8,7 +8,7 @@ export interface IProject{
   locale: string;
 }
 
-export interface IProjects{
+export interface IProjects {
   _id?: string;
   versions: IProject[];
 }

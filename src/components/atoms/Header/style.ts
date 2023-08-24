@@ -2,12 +2,12 @@ import Styled from 'styled-components';
 
 interface HeaderProps {
   backgroundColor?: string;
-};
+}
 
 export const HeaderContainer = Styled.div<HeaderProps>`
-  background-color:${(props) => props?.backgroundColor};
+  background-color:${props => props?.backgroundColor};
   transition:background-color 0.25s;
-`
+`;
 
 export const ShadowMaskContainer = Styled.div`
   display: flex;

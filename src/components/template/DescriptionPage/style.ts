@@ -10,7 +10,7 @@ export const MainContainer = Styled.div`
       margin-bottom:15px;
     }
   }
-`
+`;
 
 export const ProjectInfo = Styled.div`
   display: flex;
@@ -26,4 +26,4 @@ export const ProjectInfo = Styled.div`
   @media (max-width:768px){
     width: 100%;
   }
-`
+`;

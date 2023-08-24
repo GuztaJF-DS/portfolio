@@ -1,13 +1,13 @@
 {
-  "section1":"Introdução",
-  "section2":"Lista encadeada simples",
-  "intro":"Olá, essa é a aba de estudos, aqui irei mostrar alguns conceitos de programação, como paradigmas, algoritmos, e estruturas de dados.\nEsta página provavelmente vai ser a que mais vai demorar pra fazer, não só porque eu tenho que aprender o conceito, mas também porque eu tenho que fazer ele aqui, e explicar, então não espere por atualizações frequentes.\nDe qualquer modo, sinta-se livre para ver o que eu já fiz:",
-  "linked-list-text":"Essa é uma lista encadeada, é uma estrutura de dados comum, contendo uma cadeia de nós que se conectam por um ponteiro, este, refere ao próximo item da lista, ou a um valor nulo, um bom exemplo de lista encadeada é uma playlist de músicas sendo tocadas em um aplicativo para tocar músicas. este exemplo criado no site é um bem simples, apenas contém referências ao próximo item, e termina em um valor nulo, aqui também temos algumas funções para você testar:",
-  "current-amount":"Total de nós",
-  "palindrome":"É um palindromo",
-  "button1":"Adicionar no final",
-  "button2":"Adicionar no começo",
-  "button3":"Adicionar em ",
-  "button3-part2":"uma posição aleatória",
-  "button4":"Log List - Debug"
+  "section1": "Introdução",
+  "section2": "Lista encadeada simples",
+  "intro": "Olá, essa é a aba de estudos, aqui irei mostrar alguns conceitos de programação, como paradigmas, algoritmos, e estruturas de dados.\nEsta página provavelmente vai ser a que mais vai demorar pra fazer, não só porque eu tenho que aprender o conceito, mas também porque eu tenho que fazer ele aqui, e explicar, então não espere por atualizações frequentes.\nDe qualquer modo, sinta-se livre para ver o que eu já fiz:",
+  "linked-list-text": "Essa é uma lista encadeada, é uma estrutura de dados comum, contendo uma cadeia de nós que se conectam por um ponteiro, este, refere ao próximo item da lista, ou a um valor nulo, um bom exemplo de lista encadeada é uma playlist de músicas sendo tocadas em um aplicativo para tocar músicas. este exemplo criado no site é um bem simples, apenas contém referências ao próximo item, e termina em um valor nulo, aqui também temos algumas funções para você testar:",
+  "current-amount": "Total de nós",
+  "palindrome": "É um palindromo",
+  "button1": "Adicionar no final",
+  "button2": "Adicionar no começo",
+  "button3": "Adicionar em ",
+  "button3-part2": "uma posição aleatória",
+  "button4": "Log List - Debug"
 }
