@@ -1,10 +1,10 @@
 {
-    "locales": ["en-US", "pt-BR"],
-    "defaultLocale": "en-US",
-    "pages": {
-      "*": ["common"],
-      "/projects": ["projects"],
-      "/studies": ["studies"],
-      "/blog": ["blog"]
-    }
+  "locales": ["en-US", "pt-BR"],
+  "defaultLocale": "en-US",
+  "pages": {
+    "*": ["common"],
+    "/projects": ["projects"],
+    "/studies": ["studies"],
+    "/blog": ["blog"]
   }
+}

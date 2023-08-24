@@ -1,10 +1,10 @@
-export interface IBlog{
+export interface IBlog {
   _id?: string;
-  versions:[IPostVersions];
+  versions: [IPostVersions];
 }
-export interface IPostVersions{
-  title:string;
-  post:string;
-  locale:string;
-  date:Date;
+export interface IPostVersions {
+  title: string;
+  post: string;
+  locale: string;
+  date: Date;
 }

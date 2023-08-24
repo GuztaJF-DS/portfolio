@@ -14,7 +14,7 @@ export const MainContainer = Styled.div`
   > p {
     font-size: 16px;
   }
-`
+`;
 export const CardsContainer = Styled.div`
   margin-top:20px;
   display:grid;
@@ -29,4 +29,4 @@ export const CardsContainer = Styled.div`
   @media (max-width:675px){
     grid-template-columns: 90vw;
   }
-`
+`;

@@ -35,7 +35,7 @@ export const AnimatedTitle = Styled.h1`
     --margin-width: 244.8px;
     font-size: 86.4px;
   }
-`
+`;
 
 export const AnimatedSubTitle = Styled.h1`
   --margin-width: 12vw;
@@ -65,16 +65,16 @@ export const AnimatedSubTitle = Styled.h1`
     font-size: 36px;
     --margin-width: 172.8px;
   }
-`
+`;
 
 interface LinkContainerProps {
   currentColor: string;
-};
+}
 
 export const LinkContainer = Styled.div<LinkContainerProps>`
   display:flex;
   justify-content:space-evenly;
-  background-color:${(props) => props.currentColor};
+  background-color:${props => props.currentColor};
   width:75%;
   height:23px;
   margin-top:40vh;
@@ -84,4 +84,4 @@ export const LinkContainer = Styled.div<LinkContainerProps>`
     background-color:transparent;
     transition:color 0.3s;
   }
-`
+`;
