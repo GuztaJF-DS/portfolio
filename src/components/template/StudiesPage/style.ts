@@ -5,7 +5,8 @@ export const ContentSection = Styled.div`
   flex-direction:row;
   justify-content:space-between;
   width: 80%;
-  @media (max-width:768px){
+  max-width:1000px;
+  @media (max-width:845px){
     width: 90%;
     flex-direction:column;
     > div {
@@ -17,6 +18,7 @@ export const ContentSection = Styled.div`
 export const LinkContainer = Styled.div`
   display:flex;
   flex-direction:column;
+  min-width:200px;
   margin-right:20px;
   .Link {
     margin-top:10px;

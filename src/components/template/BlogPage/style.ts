@@ -5,6 +5,7 @@ export const MainContainer = Styled.div`
   flex-direction:row;
   justify-content:space-between;
   width: 70%;
+  max-width:1000px;
     > div {
       max-width:700px
     }
