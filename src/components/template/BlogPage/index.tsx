@@ -10,10 +10,11 @@ export default function BlogPage({ postsData }: { postsData: IBlog[] }) {
   const { t } = useTranslation();
   const router = useRouter();
   const [currentPost, setCurrentPost] = useState<IPostVersions>({
+    _id: '',
     title: t('blog:intro-title'),
     post: t('blog:intro-post'),
     locale: '',
-    date: new Date('2004-06-13T01:10:00'),
+    date: '',
   });
   const { id } = router.query;
   const { locale } = router;

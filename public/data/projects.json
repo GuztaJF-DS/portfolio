@@ -1,0 +1,100 @@
+[
+  {
+    "_id": "64c9246671bc7819424dd083",
+    "versions": [
+      {
+        "_id": "64f630ff2af81093b3d6dfb2",
+        "appUrl": "https://anotherflix.vercel.app/",
+        "description": "A Simple UI Clone of Netflix, as always, is more to train the techniques used than actually making a ground-breaking website, still was kind of fun to make this, especially the artwork, which some are custom made to get this Netflix style, most i got from official art, but the Kirby especially the melee ones i made, the latter of which i took the screenshots used. Besides that, i still need to finish, at least the main menu, things like making the card clickable or the responsivity of the site.",
+        "gitUrl": "https://github.com/GuztaJF-DS/portfolio",
+        "imageUrl": "https://i.ibb.co/gwWxF8h/Another-Flix-Thumb.png",
+        "subTitle": "An Netflix UI Clone",
+        "title": "AnotherFlix",
+        "locale": "en-US"
+      },
+      {
+        "_id": "64f630ff2af81093b3d6dfb3",
+        "appUrl": "https://anotherflix.vercel.app/",
+        "description": "Um Clone simples da UI da Netflix, eu fiz ele mais para treinar as técnicas usadas do que realmente fazer um site inovador, mesmo assim foi divertido fazer isso, principalmente a arte, que são feitas para pegar esse estilo Netflix, apesar eu ter pego a maioria das fontes oficiais e mudando algumas coisas, eu fiz as do Kirby, e do smash sozinho, o segundo eu mesmo tirei as screenshots usadas. Além disso, ainda preciso finalizar boa parte do site, bem pelo menos o menu principal, fazer coisas coisas como tornar os cards clicáveis ou a parte de responsividade do site.",
+        "gitUrl": "https://github.com/GuztaJF-DS/portfolio",
+        "imageUrl": "https://i.ibb.co/gwWxF8h/Another-Flix-Thumb.png",
+        "subTitle": "Um Clone da Netflix",
+        "title": "AnotherFlix",
+        "locale": "pt-BR"
+      }
+    ]
+  },
+  {
+    "_id": "64c9247c71bc7819424dd084",
+    "versions": [
+      {
+        "_id": "64f630ff2af81093b3d6dfb4",
+        "title": "Spotify UI Clone",
+        "appUrl": "https://spotifycloneui.netlify.app/",
+        "description": "This is an unfinished clone of Spotify, i did it in January 2022, but before finishing it i got my first job, and I'm not going to finish because the code isn't that great, since i got a lot better at code i can see this now, but I'm still going to show because i think it looks good enough, it was also fun to code this, so i have some good memories about it.\n I also am not sure about the copyright part, i don't think it has any problem using real album covers, since i don't actually play the songs, anyway feel free to look.",
+        "gitUrl": "https://github.com/GuztaJF-DS/SpotifyUiClone",
+        "imageUrl": "https://i.ibb.co/VQG3YCN/Spotify-UI.png",
+        "subTitle": "The name says it all",
+        "locale": "en-US"
+      },
+      {
+        "_id": "64f630ff2af81093b3d6dfb5",
+        "title": "Spotify UI Clone",
+        "appUrl": "https://spotifycloneui.netlify.app/",
+        "description": "Este aqui é um clone não finalizado do Spotify, que eu fiz em janeiro de 2022, não finalizei pois enquanto terminava consegui meu primeiro trabalho, e eu não planejo em finalizá-lo pois o código não envelheceu muito bem, acabei me tornando muito melhor e consertar algumas coisas seria muito trabalhoso, dito isso eu ainda vou mostrar ele aqui, pois eu gostei de fazer ele, e porque acho que está decente o suficiente. \n Não tenho muita certeza sobre a parte de copyright, mas acredito que não há nenhum problema, visto que o aplicativo não toca as músicas de verdade, só simula como seria.",
+        "gitUrl": "https://github.com/GuztaJF-DS/SpotifyUiClone",
+        "imageUrl": "https://i.ibb.co/VQG3YCN/Spotify-UI.png",
+        "subTitle": "O nome diz tudo",
+        "locale": "pt-BR"
+      }
+    ]
+  },
+  {
+    "_id": "64c9248c71bc7819424dd085",
+    "versions": [
+      {
+        "_id": "64f630ff2af81093b3d6dfb6",
+        "appUrl": "https://api-requester.vercel.app/",
+        "description": "After realizing that i did some backend-only projects, i decided that i should have some sort of way of displaying them, so i did this app that executes requests, although i planned to use it with my APIs, you can request any API here.\\n I did this project in Vue JS, i wanted to do something different, and i liked Vue, although there were some things i didn't like (mainly some shortcuts i can do in React), i think my experience using it was positive, and i plan to fully adapt to it, and learn how to do some of those tricks i got used in React.\\nI also want to add some features, like create some inputs to make requesting my APIs easier or add more APIs.",
+        "gitUrl": "https://github.com/GuztaJF-DS/Api-requester",
+        "imageUrl": "https://i.ibb.co/ryPNfk9/Api-Req-Thumb.png",
+        "subTitle": "App to show my APIs",
+        "title": "API Requester",
+        "locale": "en-US"
+      },
+      {
+        "_id": "64f630ff2af81093b3d6dfb7",
+        "appUrl": "https://api-requester.vercel.app/",
+        "description": "Após perceber que havia feito alguns projetos backend-only, eu decidi que deveria ter alguma maneira de mostrar eles sem ter que copiar o projeto e rodar ele, então eu fiz esse app que executa as requisições. apesar de ter planejado ele para usar com minhas APIs, eu também permite que você possa usar qualquer API aqui.\n Eu fiz esse projeto em Vue JS, queria testar algo diferente, e no geral eu gostei de usar o Vue, apesar de que nem tudo foram flores (principalmente algumas coisas que eu conseguia fazer no react, como a parte de herdar variáveis e componentes), diria que foi uma experiência positiva, e eu ainda planejo aprender como que faz as coisas no Vue JS. \n Eu também queria adicionar mais coisas, como inputs para minhas APIs, facilitando o processo, além de adicionar mais APIs.",
+        "gitUrl": "https://github.com/GuztaJF-DS/Api-requester",
+        "imageUrl": "https://i.ibb.co/ryPNfk9/Api-Req-Thumb.png",
+        "subTitle": "Um Aplicativo para mostrar minhas APIs",
+        "title": "API Requester",
+        "locale": "pt-BR"
+      }
+    ]
+  },
+  {
+    "_id": "64e78556b49e7dd6a1843688",
+    "versions": [
+      {
+        "_id": "64f630ff2af81093b3d6dfb8",
+        "title": "Cliger",
+        "description": "Cliger is a management application for micro and small companies, the idea behind the app would be to help these entrepreneurs to better plan their business, since in Brazil most companies close in less than a year because of stupid decisions and a really bad administration.\nCliger helps by providing a platform that combines the necessary numbers, data, graphs, predictions in one place, helping those smaller entrepreneurs that don't even know about those things, introducing it to them.\nLastly, i have to say that this is my course finishing project, and that it is separated in two parts, the Back-end and the Front-end, i will link the Front-end, but there you can also find the Back-end, i can’t provide a release APK, because i can’t pay to maintain a online SQL database, but i will post a video displaying the app, and you can also just set the app by yourself, if you really want to test.",
+        "gitUrl": "https://github.com/GuztaJF-DS/Cliger-Mobile",
+        "imageUrl": "https://i.ibb.co/zxcv3Nd/Cliger-Preview.png",
+        "subTitle": "A Business management app",
+        "locale": "en-US"
+      },
+      {
+        "_id": "64f630ff2af81093b3d6dfb9",
+        "title": "Cliger",
+        "description": "O Cliger é uma aplicação para gerenciamento de micro, pequenas e médias empresas, a ideia por trás do app seria poder ajudar esses empreendedores a planejar melhor os negócios deles, visto que no Brasil a maioria das empresas fecham em menos de um ano, por causa de decisões estúpidas, e uma administração ruim.\nO Cliger irá auxiliar providenciando uma plataforma que combina o necessário dos números, dados, gráficos e previsões, em um só lugar, ajudando esses pequenos empresários que se quer conhecem estes conceitos.\nPor fim, eu preciso dizer que esse foi o meu TCC, e que ele é separado em duas partes, o Back-end e o Front-end, eu vou colocar aqui o link do Front-end, mas lá você consegue achar o Back-End, eu também não posso providenciar um APK para testes, principalmente porque eu não consigo pagar para manter uma database SQL, mas eu irei gravar um vídeo mostrando o aplicativo, e você também pode configurar o App localmente, é só um pouco trabalhoso.",
+        "gitUrl": "https://github.com/GuztaJF-DS/Cliger-Mobile",
+        "imageUrl": "https://i.ibb.co/zxcv3Nd/Cliger-Preview.png",
+        "subTitle": "Um app para gerenciamento de negócios",
+        "locale": "pt-BR"
+      }
+    ]
+  }
+]

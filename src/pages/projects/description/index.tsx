@@ -3,24 +3,20 @@ import { useRouter } from 'next/router';
 import DescriptionPage from '@/components/template/DescriptionPage';
 import axios from 'axios';
 import LoadingPage from '@/components/template/LoadingPage';
+import ProjectsData from 'public/data/projects.json';
 import { IProjects } from '@/interfaces/Projects';
 
 export default function Description() {
   const router = useRouter();
   const { id } = router.query;
-  const [projectData, setProjectData] = useState();
+  const [projectData, setProjectData] = useState<IProjects>();
   useEffect(() => {
-    axios
-      .get(`${process.env.NEXT_PUBLIC_PORTFOLIO_API as string}/projects`)
-      .then(function (response) {
-        const currentProject = response.data.find((pj: IProjects) => {
-          return pj._id === id;
-        });
-        setProjectData(currentProject);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
+    const currentProject = (ProjectsData as IProjects[]).find(
+      (pj: IProjects) => {
+        return pj._id === id;
+      },
+    );
+    setProjectData(currentProject);
   }, [id]);
 
   return (
