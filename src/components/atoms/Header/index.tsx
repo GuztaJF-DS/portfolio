@@ -10,9 +10,7 @@ export default function Header({
 }) {
   return (
     <HeaderContainer backgroundColor={backgroundColor}>
-      <ShadowMaskContainer>
-        Gustavo&apos;s Portfolio
-      </ShadowMaskContainer>
+      <ShadowMaskContainer>Gustavo&apos;s Portfolio</ShadowMaskContainer>
     </HeaderContainer>
   );
 }
