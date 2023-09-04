@@ -12,7 +12,6 @@ export default function Header({
     <HeaderContainer backgroundColor={backgroundColor}>
       <ShadowMaskContainer>
         Gustavo&apos;s Portfolio
-        {children}
       </ShadowMaskContainer>
     </HeaderContainer>
   );

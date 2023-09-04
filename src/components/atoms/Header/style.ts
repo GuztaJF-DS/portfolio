@@ -7,6 +7,7 @@ interface HeaderProps {
 export const HeaderContainer = Styled.div<HeaderProps>`
   background-color:${props => props?.backgroundColor};
   transition:background-color 0.25s;
+  width:100%;
 `;
 
 export const ShadowMaskContainer = Styled.div`
@@ -18,7 +19,7 @@ export const ShadowMaskContainer = Styled.div`
   background: linear-gradient(90deg, rgba(0,0,0,0.363) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 75%, rgba(0,0,0,0.363) 100%);
   margin: 0;
   padding: 0;
-  width:100vw;
+  width:100%;
   height: 10vh;
   max-height: 80px;
   transition:background-color 0.25s;
