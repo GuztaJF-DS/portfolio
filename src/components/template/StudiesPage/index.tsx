@@ -6,7 +6,7 @@ import SimpleList from '../../organisms/SimpleList';
 import { ContentSection, LinkContainer, IntroSection } from './style';
 import PageTemplate from '../../organisms/PageTemplate';
 
-export default function ProjectsPage() {
+export default function StudiesPage() {
   const router = useRouter();
   const { page } = router.query;
   const { t } = useTranslation();

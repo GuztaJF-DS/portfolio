@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import DescriptionPage from '@/components/template/DescriptionPage';
-import axios from 'axios';
 import LoadingPage from '@/components/template/LoadingPage';
 import ProjectsData from 'public/data/projects.json';
 import { IProjects } from '@/interfaces/Projects';

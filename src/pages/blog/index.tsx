@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
+import React from 'react';
 import BlogPage from '@/components/template/BlogPage';
-import axios from 'axios';
-import LoadingPage from '@/components/template/LoadingPage';
 import BlogData from 'public/data/blog.json';
 import { IBlog } from '@/interfaces/Blog';
 

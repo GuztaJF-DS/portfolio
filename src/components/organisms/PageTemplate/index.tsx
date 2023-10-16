@@ -42,18 +42,6 @@ export default function PageTemplate({ children, HeaderColor }: TemplateProps) {
           >
             {t('common:studies')}
           </Link>
-          <Link
-            onMouseOver={() => {
-              setCurrentColor('#7e35af');
-            }}
-            onMouseOut={() => {
-              setCurrentColor(HeaderColor);
-            }}
-            href={'/blog'}
-            className={'Link'}
-          >
-            Blog
-          </Link>
         </LinkContainer>
       </Header>
       <ContentDiv>{children}</ContentDiv>

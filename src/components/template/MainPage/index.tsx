@@ -41,18 +41,6 @@ export default function MainPage() {
           >
             {t('studies')}
           </Link>
-          <Link
-            onMouseOver={() => {
-              setCurrentColor('#7e35af');
-            }}
-            onMouseOut={() => {
-              setCurrentColor('#d63131');
-            }}
-            href={'/blog'}
-            className={'Link'}
-          >
-            Blog
-          </Link>
         </LinkContainer>
       </MainContainer>
     </>
