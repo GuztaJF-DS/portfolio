@@ -3,10 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 export const Global = createGlobalStyle`
   * {
     margin: 0;
-    color: #292929;
     outline: 0;
     font-family: 'Noto Sans', sans-serif;
-    box-sizing: border-box;
     scrollbar-width: 5px;
     scrollbar-color: #333333 #cccccc;
     ::-webkit-scrollbar {
@@ -30,6 +28,7 @@ export const Global = createGlobalStyle`
     background-color: #fffbf4;
     cursor: default;
     z-index: 0;
+    overflow: hidden;
     min-height: 100vh;
   }
   main {
