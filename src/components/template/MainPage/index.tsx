@@ -1,8 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import {
-  MainContainer,
-  SlideButton,
-} from './style';
+import { MainContainer, SlideButton } from './style';
 import Image from 'next/image';
 import { useSwipeable } from 'react-swipeable';
 import IntroSlide from '@/components/organisms/IntroSlide';
@@ -29,13 +26,14 @@ export default function MainPage() {
   }
 
   useEffect(() => {
-    if (MainRef.current) {
-      MainRef.current.addEventListener('wheel', handleScroll, { passive: true });
+    const currentRef = MainRef?.current;
+    if (currentRef) {
+      currentRef.addEventListener('wheel', handleScroll, {
+        passive: true,
+      });
 
       return () => {
-        if (MainRef.current) {
-          MainRef.current.removeEventListener('wheel', handleScroll);
-        }
+        currentRef.removeEventListener('wheel', handleScroll);
       };
     }
   }, [MainRef, currentSlide]);
@@ -65,30 +63,18 @@ export default function MainPage() {
   }
 
   return (
-    <>
-      <MainContainer {...Swipehandlers} currentSlide={currentSlide} ref={MainRef}>
+    <div {...Swipehandlers}>
+      <MainContainer currentSlide={currentSlide} ref={MainRef}>
         <IntroSlide />
         <AboutSlide />
         <ProjectsSlide />
       </MainContainer>
       <SlideButton onClick={() => PreviousSlide()} prev>
-      <Image
-        priority
-        src="/pointer.svg"
-        height={32}
-        width={32}
-        alt="svg"
-      />
+        <Image priority src="/pointer.svg" height={32} width={32} alt="svg" />
       </SlideButton>
       <SlideButton onClick={() => NextSlide()}>
-        <Image
-          priority
-          src="/pointer.svg"
-          height={32}
-          width={32}
-          alt="svg"
-        />
+        <Image priority src="/pointer.svg" height={32} width={32} alt="svg" />
       </SlideButton>
-    </>
+    </div>
   );
 }
