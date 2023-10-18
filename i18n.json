@@ -3,8 +3,6 @@
   "defaultLocale": "en-US",
   "pages": {
     "*": ["common"],
-    "/projects": ["projects"],
-    "/studies": ["studies"],
     "/blog": ["blog"]
   }
 }

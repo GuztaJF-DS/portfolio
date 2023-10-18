@@ -2,14 +2,12 @@ import React, { ReactNode } from 'react';
 import { HeaderContainer, ShadowMaskContainer } from './style';
 
 export default function Header({
-  children,
-  backgroundColor = '#179742',
+  children
 }: {
-  children?: ReactNode;
-  backgroundColor?: string;
+  children?: ReactNode
 }) {
   return (
-    <HeaderContainer backgroundColor={backgroundColor}>
+    <HeaderContainer>
       <ShadowMaskContainer>
         Gustavo&apos;s Portfolio
         {children}

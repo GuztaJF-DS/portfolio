@@ -1,11 +1,7 @@
 import Styled from 'styled-components';
 
-interface HeaderProps {
-  backgroundColor?: string;
-}
-
-export const HeaderContainer = Styled.div<HeaderProps>`
-  background-color:${props => props?.backgroundColor};
+export const HeaderContainer = Styled.div`
+  background-color:#7e35af;
   transition:background-color 0.25s;
   width:100%;
 `;

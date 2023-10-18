@@ -35,7 +35,7 @@ export default function BlogPage({ postsData }: { postsData: IBlog[] }) {
   }, [id, locale]);
 
   return (
-    <PageTemplate HeaderColor={'#7e35af'}>
+    <PageTemplate>
       <MainContainer>
         <LinkContainer>
           <h3>Blog:</h3>

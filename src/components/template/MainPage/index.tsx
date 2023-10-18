@@ -50,7 +50,7 @@ export default function MainPage() {
 
   async function NextSlide(swipping=false){
     if(!swipping){
-      await sleep(100);
+      await sleep(150);
     }
     if(currentSlide<2){
       setCurrentSlide(currentSlide+1);
@@ -59,7 +59,7 @@ export default function MainPage() {
 
   async function PreviousSlide(swipping=false){
     if(!swipping){
-      await sleep(100);
+      await sleep(150);
     }
     if(currentSlide>0){
       setCurrentSlide(currentSlide-1);
