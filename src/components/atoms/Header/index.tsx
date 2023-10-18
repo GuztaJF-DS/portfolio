@@ -1,11 +1,7 @@
 import React, { ReactNode } from 'react';
 import { HeaderContainer, ShadowMaskContainer } from './style';
 
-export default function Header({
-  children
-}: {
-  children?: ReactNode
-}) {
+export default function Header({ children }: { children?: ReactNode }) {
   return (
     <HeaderContainer>
       <ShadowMaskContainer>

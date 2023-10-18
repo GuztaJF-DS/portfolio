@@ -3,12 +3,9 @@ import useTranslation from 'next-translate/useTranslation';
 import Header from '../../atoms/Header';
 import Footer from '../../atoms/Footer';
 import { MainContainer, ContentDiv, LinkContainer } from './style';
+import { PropWithChild } from '@/interfaces/common';
 
-interface TemplateProps {
-  children?: ReactNode;
-}
-
-export default function PageTemplate({ children }: TemplateProps) {
+export default function PageTemplate({ children }: PropWithChild) {
   const { t } = useTranslation();
 
   return (
