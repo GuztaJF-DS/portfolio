@@ -7,12 +7,19 @@ import {
   Title,
   SlideButton,
 } from './styles';
+import { useSwipeable } from 'react-swipeable';
 // import useTranslation from 'next-translate/useTranslation';
 
 
 export default function MainPage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const divRef = useRef<HTMLDivElement | null>(null);
+
+  const handlers = useSwipeable({
+    onSwipedDown: () => PreviousSlide(true),
+    onSwipedUp: () => NextSlide(true),
+    trackMouse: true
+  });
 
   function handleScroll(event: WheelEvent) {
     const delta = event.deltaY;
@@ -41,17 +48,19 @@ export default function MainPage() {
     })
   }
 
-  async function NextSlide(){
-    await sleep(100);
+  async function NextSlide(swipping=false){
+    if(!swipping){
+      await sleep(100);
+    }
     if(currentSlide<2){
       setCurrentSlide(currentSlide+1);
     }
   }
 
-  async function PreviousSlide(){
-    console.log('test1');
-    await sleep(100);
-    console.log('test');
+  async function PreviousSlide(swipping=false){
+    if(!swipping){
+      await sleep(100);
+    }
     if(currentSlide>0){
       setCurrentSlide(currentSlide-1);
     }
@@ -60,7 +69,7 @@ export default function MainPage() {
   
   return (
     <>
-    <MainContainer currentSlide={currentSlide} ref={divRef}>
+    <MainContainer {...handlers} currentSlide={currentSlide} ref={divRef}>
       <SlideContainer>
         <LeftContainer>
           <Title>Portfolio</Title>
@@ -87,13 +96,13 @@ export default function MainPage() {
       </SlideContainer>
     </MainContainer>
       <SlideButton
-        onClick={PreviousSlide}
+        onClick={()=>PreviousSlide()}
         prev
       >
         Prev
       </SlideButton>
       <SlideButton
-        onClick={NextSlide}
+        onClick={()=>NextSlide()}
       >
         Next
       </SlideButton>

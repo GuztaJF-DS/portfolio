@@ -6,6 +6,7 @@ export const Global = createGlobalStyle`
     outline: 0;
     font-family: 'Noto Sans', sans-serif;
     scrollbar-width: 5px;
+    user-select: none;
     scrollbar-color: #333333 #cccccc;
     ::-webkit-scrollbar {
       width: 5px;
