@@ -50,10 +50,10 @@ export const LeftContainer = Styled.div`
 export const RightContainer = Styled.div<RightContainerProps>`
   background-color:${props => props.backgroundColor};
   width:60vw;
-  font-size: 90px;
+  font-size: 5vw;
 `;
 
 export const Title = Styled.h1`
   width: fit-content;
-  font-size: 90px;
+  font-size: 5vw;
 `;

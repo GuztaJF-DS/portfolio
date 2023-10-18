@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   MainContainer,
   SlideContainer,
@@ -35,13 +35,23 @@ export default function MainPage() {
     }
   }, [divRef, currentSlide]);
 
-  function NextSlide(){
+  function sleep(duration:number) {
+    return new Promise((resolve) => {
+      setTimeout(resolve, duration)
+    })
+  }
+
+  async function NextSlide(){
+    await sleep(100);
     if(currentSlide<2){
       setCurrentSlide(currentSlide+1);
     }
   }
 
-  function PreviousSlide(){
+  async function PreviousSlide(){
+    console.log('test1');
+    await sleep(100);
+    console.log('test');
     if(currentSlide>0){
       setCurrentSlide(currentSlide-1);
     }
